@@ -1,0 +1,12 @@
+Algoritmo sin_titulo
+	DEFINIR VUELTA, ENTREGADO, PRECIO Como Entero;
+	LEER ENTREGADO, PRECIO;
+	VUELTA = ENTREGADO - PRECIO;
+	Si ENTREGADO >= PRECIO Entonces
+		ESCRIBIR " TU VUELTA ES";
+	SiNo
+		ESCRIBIR " TE FALTA DINERO";
+	Fin Si
+	
+	
+FinAlgoritmo

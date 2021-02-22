@@ -1,0 +1,25 @@
+Algoritmo EJERCICIO_34
+	
+	Definir NUM_ALEATORIO, INTENTO Como Entero;
+	NUM_ALEATORIO = ALEATORIO(1, 100);
+	
+	Repetir
+		Escribir "INTRODUCE UN Nº ENTRE EL 1 Y EL 100 ";
+		Leer INTENTO;
+		
+		Si INTENTO > NUM_ALEATORIO Entonces
+			Escribir  " EL Nº INTRODUCIDO ES MAYOR QUE EL ALEATORIO ";
+		SiNo
+			
+		Si INTENTO < NUM_ALEATORIO Entonces
+			Escribir " EL Nº INTRODUCIDO ES MENOR QUE EL ALEATORIO ";
+		FinSi
+	FinSi
+	
+		
+		
+		
+	Mientras Que INTENTO <> NUM_ALEATORIO;
+	
+	Escribir " ¡¡EXACTO, HAS ACERTADO EL NÚMERO ALEATORIO!! , ERA  " NUM_ALEATORIO;
+FinAlgoritmo

@@ -1,0 +1,38 @@
+Algoritmo CATEGORIAS_SUELDO_INCREMENTO
+	Definir SUELDO, CATEGORIA Como Entero;
+	
+	ESCRIBIR " INTRODUCE TU SUELDO";
+	LEER SUELDO
+	
+	ESCRIBIR" INTRODUCE TU CATEGORIA";
+	LEER CATEGORIA;
+	
+	Si CATEGORIA == 1 Entonces
+		ESCRIBIR  " CATEGORIA ", CATEGORIA, " TU NUEVO SUELDO ES ", SUELDO * 1.15;
+	FinSi
+	
+		
+		Si CATEGORIA == 2 Entonces
+			ESCRIBIR " CATEGORIA ", CATEGORIA, " TU NUEVO SUELDO ES ", SUELDO * 1.10;
+		FinSi
+		
+			
+			Si CATEGORIA == 3 Entonces
+				Escribir "CATEGORIA ", CATEGORIA, " TU NUEVO SUELDO ES ", SUELDO * 1 .06;
+			FinSi
+			
+				
+				Si CATEGORIA == 4 Entonces
+					Escribir " CATEGORIA ", CATEGORIA, " TU NUEVO SUELDO ES ", SUELDO * 1.03;
+			
+			
+		
+	
+		
+				Fin Si
+				
+
+
+	
+	
+FinAlgoritmo

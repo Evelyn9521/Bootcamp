@@ -1,0 +1,19 @@
+Algoritmo EJERCICIO_55
+	Definir MATRIZ, TAMANO_COLUMNAS, TAMANO_FILAS, FILAS, COLUMNAS Como Entero;
+	
+	TAMANO_FILAS = 4;
+	TAMANO_COLUMNAS=5;
+	
+	Dimension MATRIZ[TAMANO_FILAS, TAMANO_COLUMNAS];
+	
+	Para FILAS = 0 HASTA TAMANO_FILAS - 1 Hacer
+	
+	Para COLUMNAS = 0 HASTA TAMANO_COLUMNAS - 1 Hacer
+		MATRIZ[FILAS, COLUMNAS]= Aleatorio(1, 100);
+		
+		Escribir MATRIZ[FILAS,COLUMNAS],"   " Sin Saltar;
+	FinPara	
+	Escribir " ";
+	FinPara
+	
+FinAlgoritmo

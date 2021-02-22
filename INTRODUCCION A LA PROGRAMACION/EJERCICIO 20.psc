@@ -1,0 +1,23 @@
+Algoritmo EJERCICIO_20
+	
+	Definir clave Como Caracter;
+	Definir  CONTADOR, N Como Entero;
+	CONTADOR = 0;
+	N = 3
+	Repetir
+		ESCRIBIR " INTRODUZCA SU CONTRASEÑA. DISPONE DE "  N  " INTENTOS";
+		Leer  CLAVE;
+		CONTADOR = CONTADOR + 1
+		N = N -1;
+	Hasta Que CLAVE == "EUREKA" O CONTADOR == 3;
+	
+
+	
+	Si CLAVE == "EUREKA"  Entonces
+		ESCRIBIR " CONTRASEÑA CORRECTA, BIENVENIDO";
+	SiNo
+		 ESCRIBIR " CONTRASEÑA INCORRECTA, USUARIO BLOQUEADO";
+	Fin Si
+		
+	
+FinAlgoritmo

@@ -1,0 +1,33 @@
+Algoritmo EJERCICIO_40
+	
+	Definir ARRAY_1, INDICE, TAMAÑO, CONTADOR, SUMA, SUMA_TOTAL Como Entero;
+	Definir PROMEDIO, PROMEDIO_TOTAL COMO REAL;
+	Escribir "INTRODUCE EL TAMAÑO DEL ARRAY ";
+	Leer TAMAÑO;
+	Dimension ARRAY_1[TAMAÑO];
+	
+	CONTADOR  = 0;
+	SUMA = 0;
+	SUMA_TOTAL = 0;
+	
+	Para INDICE = 0 Hasta TAMAÑO - 1 Con Paso 1 Hacer
+		ARRAY_1[INDICE] = Aleatorio(-5, 15);
+		Escribir ARRAY_1[INDICE];
+		
+		Si ARRAY_1[INDICE] > 0 Entonces
+			CONTADOR = CONTADOR + 1;
+			SUMA = SUMA + ARRAY_1[INDICE];
+			
+		Fin Si
+		
+		SUMA_TOTAL = ARRAY_1[INDICE] + SUMA_TOTAL;
+		
+	Fin Para
+	PROMEDIO_TOTAL = SUMA_TOTAL / TAMAÑO;
+	PROMEDIO = SUMA / CONTADOR;
+	Escribir "LOS NUMEROS MAYORES QUE 0 SON: ",CONTADOR;
+	
+	Escribir " LA MEDIA DE LOS Nº POSITIVOS ES: ", PROMEDIO;
+	
+	Escribir " LA MEDIA TOTAL ES DE: ", PROMEDIO_TOTAL;
+FinAlgoritmo

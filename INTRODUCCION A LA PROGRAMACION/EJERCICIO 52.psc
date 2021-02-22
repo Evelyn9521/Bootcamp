@@ -1,0 +1,32 @@
+Algoritmo EJERCICIO_52
+	
+	Definir ARRAY, INDICE, TAMANO, NUM, CONTADOR Como Entero;
+	TAMANO = 10;
+	Dimension ARRAY[TAMANO];
+	
+	Escribir " ¿QUE Nº QUIERES COMPROBAR SI SE HA GENERADO?";
+	Leer NUM;
+	
+	CONTADOR = 0;
+	//GENERAR NUMEROA ALEATORIOS 
+	Para INDICE = 0 HASTA TAMANO - 1 Con Paso 1 Hacer
+		ARRAY[INDICE] = Aleatorio(1, 15);
+		Escribir ARRAY[INDICE], " ",  SIN SALTAR;
+	FinPara
+	Escribir "";
+
+	// ENCUENTRA EL NUMERO QUE QUIERES EN EL ARRAY
+	Para  INDICE = 0 HASTA TAMANO - 1 Hacer
+		SI NUM == ARRAY[INDICE] Entonces
+			CONTADOR = CONTADOR + 1;
+			SI CONTADOR == 1 Entonces
+				
+				Escribir NUM " ESTA PRESENTE EN EL INDICE ", INDICE;
+		FinSi
+		
+		FinSi
+	FinPara
+	
+	ESCRIBIR " EL Nº ", NUM, " HA APARECIDO ", CONTADOR, " VECES ";
+	
+FinAlgoritmo
