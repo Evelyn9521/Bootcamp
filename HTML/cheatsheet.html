@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cheatsheet</title>
 </head>
-<body>   
-     <!-- ENLACES INTERNOS Y EXTERNOS  -->
-    <a href="https://google.com"target="_blank">ir a google</a>
+
+<body>
+    <!-- ENLACES INTERNOS Y EXTERNOS  -->
+    <a href="https://google.com" target="_blank">ir a google</a>
     <a href="carpeta/blog.html">blog</a>
 
     <!-- linea en blanco -->
     <br>
-    
+
     <!-- linea separadora -->
     <hr>
 
@@ -25,5 +27,194 @@
     <h5>titulo 5</h5>
     <h6>titulo 6</h6>
 
+    <hr>
+    <!-- textos/ párrafos/ -->
+    <p>
+        Lorem i
+        psum <b>dolor sit amet, </b>consectetur adipisicing elit. Laudantium pariatur soluta nihil nam eaque alias cum
+        similique <strong>aperiam volup tate </strong>eligendi, non rerum natus. Pariatur earum quod autem labore, eos
+        soluta quaerat
+        cumque doloremque enim id
+        a ips
+        am dolores, <s>amet</s>, quos <em>quibusdam iste</em> nisi quasi illum odio aliquam totam ipsum
+        magni.
+    </p>
+    <pre> Lorem i
+        psum <b>dolor sit amet, </b>consectetur adipisicing elit. Laudantium pariatur soluta nihil nam eaque alias cum
+        similique <strong>aperiam volup tate </strong>eligendi, non rerum natus. Pariatur earum quod autem labore, eos soluta quaerat
+        cumque  doloremque enim id
+        a ips
+        am dolores, amet, quos quibusdam iste nisi quasi illum odio aliquam totam ipsum
+        magni. 
+    </pre>
+
+    <p> <span id = ingredients> ipsum dolor sit,</span> amet consectetur adipisicing elit. Amet commodi itaque temporibus eius pariatur
+        consectetur non molestiae ducimus assumenda aspernatur!
+    </p>
+
+    <p>
+        c<sub>8</sub>
+    </p>
+
+    <p>
+        <p>el teorema de pitagoras se conoce por la ecuación de:</p>
+        <var>a</var><sup>2</sup> + <var>b</var><sup>2</sup> =<var>c</var><sup>2</sup>
+    </p>
+    
+
+        <p>las clases de bootcamp empiezan a las<time datetime = "09:30"> 09:30 </time></p>
+        <p>empieza el 1 de febrero </p>
+
+        <br><hr><br>
+
+    <!-- contenedores / containers -->
+    
+    <nav>
+        <a href="">enlace 1</a>
+        <a href="">enlace 2</a>
+        <a href="">enlace 3</a>
+        <button>login</button>
+    </nav>
+
+    <section>
+        <article>
+            <h1>titulo del articulo</h1>
+            <p>contenido del articulo</p>
+        </article>
+        <a href="">leer mas</a>
+    </section>
+
+    <aside>
+        <p> menú generalmente lateral</p>
+    </aside>
+
+    <footer>
+        <p>pie de pagina</p>
+        <address>
+            malaga, 29007
+        </address>
+    </footer>
+
+    <div class = "container">
+        <p>contenedor generico par agrupar elementos</p>
+    </div>
+    <br><hr><br>
+
+    <!-- listas / list -->
+
+    <ul>
+        <li>elemento 1</li>
+        <li>elemento 2</li>
+        <li>elemento 3</li>
+        <li>elemento 4</li>
+        <li>elemento 5</li>
+    </ul>
+
+    <ol>
+        <li>elemento</li>
+        <ol>
+            <li>elemento</li>
+            <li>elememto</li>
+        </ol>
+        <li>elemento</li>
+        <li>elemento</li>
+    </ol>
+
+    <ol start="500">
+        <li>elemento</li>
+        <li>elemento</li>
+        <li>elemento</li>
+    </ol>
+
+
+        <!-- tablas / tables -->
+
+        <table>
+            <thead>
+                <tr>
+                    <th>nombre</th>
+                    <th>email</th>
+                    <th>edad</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>john</td>
+                    <td>jgv@ouee.com</td>
+                    <td> 34</td>
+                </tr>
+                <tr>
+                    <td>john</td>
+                    <td>email.com</td>
+                    <td>67</td>
+                </tr>
+                <tr>
+                    <td>john</td>
+                    <td>email.com</td>
+                    <td>67</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th>nombre</th>
+                    <th>email</th>
+                    <th>edad</th>
+                </tr>
+            </tfoot>
+        </table>
+
+
+        <br><hr><br>
+
+        <!-- formularios / forms -->
+
+
+        <form action=""metod ="get">
+
+         <div class ="inputBlock">
+            <label for="nameinput">nombre</label><br>
+            <input type="text" id ="nameinput" name ="username"maxlength = "5"placeholder="introduce tu nombre">
+         </div> <br>
+
+         <div class ="inputBlock">
+            <label for="lastnameinput">Apellidos</label><br>
+            <input type="text" id ="lastnameinput" name ="lastname"placeholder="introduce tu apellido">
+         </div> <br>
+
+         <div class ="inputBlock">
+            <label for="emailinput">E-mail</label><br>
+            <input type="email" id ="emailinput" name ="useremail"placeholder="introduce tu e-mail">
+         </div> <br>
+
+         <div class ="inputBlock">
+            <label for="passwordinput">E-mail</label><br>
+            <input type="password" id ="passwordinput" name ="password"placeholder="introduce tu contraseña">
+         </div> <br>
+
+         <div class ="inputBlock">
+            <label for="passwordinput">message</label><br>
+            <textarea name ="message" id ="messageinput" cols = "10" rows ="10"></textarea>
+         </div> <br>
+
+         <div class ="inputblock">
+             <label for="sex">Género</label> <br>
+             <select name="sexinput" id="sexinput">
+                 <option value=""hidden></option>
+                 <option value="female">femenino</option>
+                 <option value="male">masculino</option>
+             </select>
+         </div>
+         <br><br>
+         <input type="submit" value="guardar">
+
+
+        </form>
+
+
+
+
+        <br><br><br><br><br><br><br><br>
+
 </body>
+
 </html>
