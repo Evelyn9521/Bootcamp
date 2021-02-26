@@ -187,7 +187,7 @@
          </div> <br>
 
          <div class ="inputBlock">
-            <label for="passwordinput">E-mail</label><br>
+            <label for="passwordinput">Contraseña</label><br>
             <input type="password" id ="passwordinput" name ="password"placeholder="introduce tu contraseña">
          </div> <br>
 
@@ -205,11 +205,85 @@
              </select>
          </div>
          <br><br>
+
+         <div class="inputBlock">
+         <label for= "ageinput"> edad </label>
+         <input id = "ageinput"name="ageinput" type = "number" min = "0" max="120"> <br>
+       
+         <label for="birthdayinput">fecha de nacimiento</label>
+         <input type="date" id = "birthdayinput" name= "birthdayinput">
+        </div>
+
+        <div class="InputBlock">
+            <label for="carbrands">La marca de tu coche</label>
+            <input type="text" id= "CarBrandInput" Name ="Carbrand" list="carbrandlist">
+            <datalist id="carbrandlist">
+                <option value="bmw">bmw</option>
+                <option value="ford">ford</option>
+                <option value="mercedes">mercedes</option>
+            </datalist>
+        </div>
+        <br><br>
+        <fieldset disabled>
+            <legend>información de tu pareja</legend>
+         <div class ="inputBlock">
+            <label for="nameinput">nombre</label><br>
+            <input type="text" id ="nameinput" name ="username"maxlength = "5"placeholder="introduce tu nombre">
+         </div> <br>
+
+         <div class ="inputBlock">
+            <label for="lastnameinput">Apellidos</label><br>
+            <input type="text" id ="lastnameinput" name ="lastname"placeholder="introduce tu apellido">
+         </div> <br>
+        </fieldset>
+
+        <fieldset>
+            <legend>productos</legend>
+            <div>
+                <input type="checkbox"name = "iphoneproduct" id= "iphoneproduct"required>
+                <label for="iphoneproduct">iphone</label>
+            </div>
+
+            <div>
+                <input type="checkbox"name = "mcbookproduct" id= "mcbookproduct"required>
+                <label for="mcbookproduct">macbook</label>
+            </div>
+            <div>
+                <input type="checkbox"name = "airpodsproduct" id= "airpodsproduct"required>
+                <label for="airpodsproduct">airpods</label>
+            </div>
+        </fieldset>
+
+        <label for="rangeinput">seleccione cantidad de elementos</label>
+        <input type="range"name="rangeinput" id="rangeinput">
+        <br><br>
+
+        <label for="fuelevel">cantidad de gasolina</label> 
+        <meter min ="0" max="100" id= "fuellevel" value="60"></meter>
+
+        <label for="progressinput">progreso</label>
+        <progress max="100" value="33" id="progressinput">60</progress>
+
+        <br><br>
+
+        <!-- Required = puede seleccionar mas de una opción
+        Checked = dejar una opción fijada, que puede modificarse a la hora de elegir
+        Disable = inhabilitar la parte a rellenar de un formulario -->
+            <!-- control shift 7 para hacer comentarios -->
+
+            
+        <!-- siempre debe ir dentro del formulario, sino no guarda ni resetea -->
+         
+        <label for="fileinput">subir un archivo</label>
+         <input type="file" id="fileinput" name="fileinput">
+         
+         <br><br>
          <input type="submit" value="guardar">
-
-
-        </form>
-
+         <input type="reset" value="Vaciar">
+        </form> <br>
+        
+        <!-- multimedia / media -->
+        <img src="imagenes/584x584.jpeg" width="500" alt=" Paisaje al atardecer">
 
 
 
