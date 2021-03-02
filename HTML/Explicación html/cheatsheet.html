@@ -2,8 +2,35 @@
 <html lang="en">
 
 <head>
+    <!-- metadatos / metadata -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+    <!-- descripción de la pág que aparece en internet cuando se busca  -->
+    <meta name="description" content="Academia de sofware, ciberseguridad">
+
+    <!-- autor de la pág, no a nivel de ususario -->
+    <meta name="author" content="Codespace" >
+
+    <!-- para saber si quiero ser indexado o no en el buscador de internet -->
+    <meta name="robots" content="noindex">
+    <meta name="robots" content="index">
+
+    <!-- visita todos los enlaces de los contenidos de toda la web completa y los procesa -->
+    <meta name="robots" content="nofollow">
+    <meta name="robots" content="folow"> comportamiento por defecto
+
+    <!-- controlaré que no me guarden la pág en el caché -->
+    <meta http-equiv="cache-control" content="no cache">
+    
+    <!-- redirigir a otro documento
+    <meta http-equiv="refresh" content="10; url=https://www.google.com"> -->
+
+    <style></style>
+    <script></script>
+   
+
     <title>cheatsheet</title>
 </head>
 
@@ -48,7 +75,8 @@
         magni. 
     </pre>
 
-    <p> <span id = ingredients> ipsum dolor sit,</span> amet consectetur adipisicing elit. Amet commodi itaque temporibus eius pariatur
+    <p> <span id=ingredients> ipsum dolor sit,</span> amet consectetur adipisicing elit. Amet commodi itaque temporibus
+        eius pariatur
         consectetur non molestiae ducimus assumenda aspernatur!
     </p>
 
@@ -57,18 +85,19 @@
     </p>
 
     <p>
-        <p>el teorema de pitagoras se conoce por la ecuación de:</p>
-        <var>a</var><sup>2</sup> + <var>b</var><sup>2</sup> =<var>c</var><sup>2</sup>
+    <p>el teorema de pitagoras se conoce por la ecuación de:</p>
+    <var>a</var><sup>2</sup> + <var>b</var><sup>2</sup> =<var>c</var><sup>2</sup>
     </p>
-    
 
-        <p>las clases de bootcamp empiezan a las<time datetime = "09:30"> 09:30 </time></p>
-        <p>empieza el 1 de febrero </p>
 
-        <br><hr><br>
+    <p>las clases de bootcamp empiezan a las<time datetime="09:30"> 09:30 </time></p>
+    <p>empieza el 1 de febrero </p>
+
+    <br>
+    <hr><br>
 
     <!-- contenedores / containers -->
-    
+
     <nav>
         <a href="">enlace 1</a>
         <a href="">enlace 2</a>
@@ -95,10 +124,11 @@
         </address>
     </footer>
 
-    <div class = "container">
+    <div class="container">
         <p>contenedor generico par agrupar elementos</p>
     </div>
-    <br><hr><br>
+    <br>
+    <hr><br>
 
     <!-- listas / list -->
 
@@ -127,96 +157,97 @@
     </ol>
 
 
-        <!-- tablas / tables -->
+    <!-- tablas / tables -->
 
-        <table>
-            <thead>
-                <tr>
-                    <th>nombre</th>
-                    <th>email</th>
-                    <th>edad</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>john</td>
-                    <td>jgv@ouee.com</td>
-                    <td> 34</td>
-                </tr>
-                <tr>
-                    <td>john</td>
-                    <td>email.com</td>
-                    <td>67</td>
-                </tr>
-                <tr>
-                    <td>john</td>
-                    <td>email.com</td>
-                    <td>67</td>
-                </tr>
-            </tbody>
-            <tfoot>
-                <tr>
-                    <th>nombre</th>
-                    <th>email</th>
-                    <th>edad</th>
-                </tr>
-            </tfoot>
-        </table>
-
-
-        <br><hr><br>
-
-        <!-- formularios / forms -->
+    <table>
+        <thead>
+            <tr>
+                <th>nombre</th>
+                <th>email</th>
+                <th>edad</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>john</td>
+                <td>jgv@ouee.com</td>
+                <td> 34</td>
+            </tr>
+            <tr>
+                <td>john</td>
+                <td>email.com</td>
+                <td>67</td>
+            </tr>
+            <tr>
+                <td>john</td>
+                <td>email.com</td>
+                <td>67</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>nombre</th>
+                <th>email</th>
+                <th>edad</th>
+            </tr>
+        </tfoot>
+    </table>
 
 
-        <form action=""metod ="get">
+    <br>
+    <hr><br>
 
-         <div class ="inputBlock">
+    <!-- formularios / forms -->
+
+
+    <form action="" metod="get">
+
+        <div class="inputBlock">
             <label for="nameinput">nombre</label><br>
-            <input type="text" id ="nameinput" name ="username"maxlength = "5"placeholder="introduce tu nombre">
-         </div> <br>
+            <input type="text" id="nameinput" name="username" maxlength="5" placeholder="introduce tu nombre">
+        </div> <br>
 
-         <div class ="inputBlock">
+        <div class="inputBlock">
             <label for="lastnameinput">Apellidos</label><br>
-            <input type="text" id ="lastnameinput" name ="lastname"placeholder="introduce tu apellido">
-         </div> <br>
+            <input type="text" id="lastnameinput" name="lastname" placeholder="introduce tu apellido">
+        </div> <br>
 
-         <div class ="inputBlock">
+        <div class="inputBlock">
             <label for="emailinput">E-mail</label><br>
-            <input type="email" id ="emailinput" name ="useremail"placeholder="introduce tu e-mail">
-         </div> <br>
+            <input type="email" id="emailinput" name="useremail" placeholder="introduce tu e-mail">
+        </div> <br>
 
-         <div class ="inputBlock">
+        <div class="inputBlock">
             <label for="passwordinput">Contraseña</label><br>
-            <input type="password" id ="passwordinput" name ="password"placeholder="introduce tu contraseña">
-         </div> <br>
+            <input type="password" id="passwordinput" name="password" placeholder="introduce tu contraseña">
+        </div> <br>
 
-         <div class ="inputBlock">
+        <div class="inputBlock">
             <label for="passwordinput">message</label><br>
-            <textarea name ="message" id ="messageinput" cols = "10" rows ="10"></textarea>
-         </div> <br>
+            <textarea name="message" id="messageinput" cols="10" rows="10"></textarea>
+        </div> <br>
 
-         <div class ="inputblock">
-             <label for="sex">Género</label> <br>
-             <select name="sexinput" id="sexinput">
-                 <option value=""hidden></option>
-                 <option value="female">femenino</option>
-                 <option value="male">masculino</option>
-             </select>
-         </div>
-         <br><br>
+        <div class="inputblock">
+            <label for="sex">Género</label> <br>
+            <select name="sexinput" id="sexinput">
+                <option value="" hidden></option>
+                <option value="female">femenino</option>
+                <option value="male">masculino</option>
+            </select>
+        </div>
+        <br><br>
 
-         <div class="inputBlock">
-         <label for= "ageinput"> edad </label>
-         <input id = "ageinput"name="ageinput" type = "number" min = "0" max="120"> <br>
-       
-         <label for="birthdayinput">fecha de nacimiento</label>
-         <input type="date" id = "birthdayinput" name= "birthdayinput">
+        <div class="inputBlock">
+            <label for="ageinput"> edad </label>
+            <input id="ageinput" name="ageinput" type="number" min="0" max="120"> <br>
+
+            <label for="birthdayinput">fecha de nacimiento</label>
+            <input type="date" id="birthdayinput" name="birthdayinput">
         </div>
 
         <div class="InputBlock">
             <label for="carbrands">La marca de tu coche</label>
-            <input type="text" id= "CarBrandInput" Name ="Carbrand" list="carbrandlist">
+            <input type="text" id="CarBrandInput" Name="Carbrand" list="carbrandlist">
             <datalist id="carbrandlist">
                 <option value="bmw">bmw</option>
                 <option value="ford">ford</option>
@@ -226,40 +257,40 @@
         <br><br>
         <fieldset disabled>
             <legend>información de tu pareja</legend>
-         <div class ="inputBlock">
-            <label for="nameinput">nombre</label><br>
-            <input type="text" id ="nameinput" name ="username"maxlength = "5"placeholder="introduce tu nombre">
-         </div> <br>
+            <div class="inputBlock">
+                <label for="nameinput">nombre</label><br>
+                <input type="text" id="nameinput" name="username" maxlength="5" placeholder="introduce tu nombre">
+            </div> <br>
 
-         <div class ="inputBlock">
-            <label for="lastnameinput">Apellidos</label><br>
-            <input type="text" id ="lastnameinput" name ="lastname"placeholder="introduce tu apellido">
-         </div> <br>
+            <div class="inputBlock">
+                <label for="lastnameinput">Apellidos</label><br>
+                <input type="text" id="lastnameinput" name="lastname" placeholder="introduce tu apellido">
+            </div> <br>
         </fieldset>
 
         <fieldset>
             <legend>productos</legend>
             <div>
-                <input type="checkbox"name = "iphoneproduct" id= "iphoneproduct"required>
+                <input type="checkbox" name="iphoneproduct" id="iphoneproduct" required>
                 <label for="iphoneproduct">iphone</label>
             </div>
 
             <div>
-                <input type="checkbox"name = "mcbookproduct" id= "mcbookproduct"required>
+                <input type="checkbox" name="mcbookproduct" id="mcbookproduct" required>
                 <label for="mcbookproduct">macbook</label>
             </div>
             <div>
-                <input type="checkbox"name = "airpodsproduct" id= "airpodsproduct"required>
+                <input type="checkbox" name="airpodsproduct" id="airpodsproduct" required>
                 <label for="airpodsproduct">airpods</label>
             </div>
         </fieldset>
 
         <label for="rangeinput">seleccione cantidad de elementos</label>
-        <input type="range"name="rangeinput" id="rangeinput">
+        <input type="range" name="rangeinput" id="rangeinput">
         <br><br>
 
-        <label for="fuelevel">cantidad de gasolina</label> 
-        <meter min ="0" max="100" id= "fuellevel" value="60"></meter>
+        <label for="fuelevel">cantidad de gasolina</label>
+        <meter min="0" max="100" id="fuellevel" value="60"></meter>
 
         <label for="progressinput">progreso</label>
         <progress max="100" value="33" id="progressinput">60</progress>
@@ -269,25 +300,68 @@
         <!-- Required = puede seleccionar mas de una opción
         Checked = dejar una opción fijada, que puede modificarse a la hora de elegir
         Disable = inhabilitar la parte a rellenar de un formulario -->
-            <!-- control shift 7 para hacer comentarios -->
+        <!-- control shift 7 para hacer comentarios -->
 
-            
+
         <!-- siempre debe ir dentro del formulario, sino no guarda ni resetea -->
-         
+
         <label for="fileinput">subir un archivo</label>
-         <input type="file" id="fileinput" name="fileinput">
-         
-         <br><br>
-         <input type="submit" value="guardar">
-         <input type="reset" value="Vaciar">
-        </form> <br>
-        
-        <!-- multimedia / media -->
-        <img src="imagenes/584x584.jpeg" width="500" alt=" Paisaje al atardecer">
+        <input type="file" id="fileinput" name="fileinput">
 
+        <br><br>
+        <input type="submit" value="guardar">
+        <input type="reset" value="Vaciar">
+    </form> <br>
 
+    <!-- multimedia / media -->
+    <img src="imagenes/584x584.jpeg" width="500" alt=" Paisaje al atardecer"> <br><br>
 
-        <br><br><br><br><br><br><br><br>
+    <iframe width="500" height="400"
+        src="https://www.bing.com/videos/search?view=detail&mid=EE2A6D69C7B5AEBBDD81EE2A6D69C7B5AEBBDD81&q=soy+programador+fp&shtp=GetUrl&shid=a107cc65-cf43-4a18-8a94-1226a9820fd4&shtk=U295IHByb2dyYW1hZG9yIGZw&shdk=YXNkc2FoaHJlIGttYXNkaW9tam5uIGRlaG9pIHVpICIgIiBoZHMgIiBkZHNhZGpoLGtrcG9rw7HDsWtqZHNhZCAiIiIgZGZzZGpmbmtqblogcnRlYmJoZGFzZGFzZHNhZHUgJGZ1bmN0aW9uKCkgeyAkKA%3D%3D&shhk=9X9wlNnRzAdtPEKnM5XJE8ZlsWaz14GqarihDw22f%2F0%3D&form=VDSHOT&shth=OSH.1jQaznqr8meCp3zAAelZRg"
+        allowfullscreen></iframe>
+
+    <iframe src="https://www.marca.com" width="500" height="400" frameborder="0"></iframe>
+
+    <object data="" type="applicacion.pdf"></object>
+
+    <!-- Citas/ Quotations blockquote sirve para empleaar estilos, formatos, etc-->
+    <h3>Citas / Quotations</h3>
+    <blockquote>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error, adipisci. Odit veritatis exercitationem
+        aliquid, sint unde at! Consectetur saepe quidem unde, ratione doloremque quae ipsam quod quibusdam! Amet ea
+        omnis quam sapiente consequatur ad, quaerat accusamus neque sunt in magnam illum veritatis mollitia, earum quod
+        id. Saepe harum impedit explicabo accusantium maiores facilis voluptatum voluptates molestiae dignissimos
+        debitis voluptatem corporis quis, totam, iusto aliquam provident aperiam mollitia iste laboriosam obcaecati
+        illum voluptatibus. Ex dicta veniam, consectetur odio quis dolore eligendi sint possimus! Illo hic tempore
+        architecto nisi, omnis amet quam numquam laudantium reprehenderit eius? Dolore esse eum nostrum iusto eveniet
+        provident assumenda optio reprehenderit eius. Quaerat placeat libero cupiditate exercitationem ipsum illum
+        officia a, commodi quae neque, nam deserunt suscipit, totam nisi aliquid eligendi. Similique beatae odit totam
+        earum debitis consectetur asperiores eos obcaecati, excepturi laborum exercitationem cupiditate harum doloribus
+        blanditiis et expedita quas. Adipisci consequuntur quas explicabo debitis praesentium.
+    </blockquote>
+
+    <q> Soy programador. <abbr title="Formación profesional">FP</abbr> </q> <br>
+    <abbr title="Worls wide web">WWW</abbr><br>
+
+    <!-- scripting -->
+       <script> document.write("Escribiendo esto desde JV")</script><br>
+
+       <!-- posible mensaje de error si no tienes activo java scrip -->
+       <noscript> Error. Tu navegador no soporta Java</noscript>
+
+    <br><br>
+
+    &bnequiv;
+    &copy;
+
+    <!-- para dar espacio como caracteres entre palabras o letras -->
+    &nbsp; 
+
+    <br><br>
+
+       <button>click</button>
+
+    <br><br><br><br><br><br><br><br>
 
 </body>
 
