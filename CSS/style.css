@@ -1,35 +1,62 @@
-/* Selecciona todos los elementos de la pág */
-* {
-    font: 1em/1.3 Arial, Helvetica, sans-serif
+
+
+#primero{
+    height: 50vh;
+
+    /* imagen de fondo */
+    /* background-image: url(AGP_C037_place_malaga_01.jpg.image.750.563.low.jpeg); */
+
+    /* left center rigth */
+    background-position-x: center;
+
+/* top center botton */
+    background-position-y: bottom;
+
+   
+    /* cuando la imagen es mas pequeña que el contenedor(pag) */
+    background-repeat: no-repeat;
+    background-size: contain;
+
+
+     /* background-attachment: fixed; */
+     /* fija la imagen en la pág */
+
+
+     /* Margenes */
+   
+     margin-top: 10px;
+     margin-right: 10px;
+     margin-bottom: 10px;
+     margin-left: 10px;
+     margin: 20px; 
+     /* -sobreescribe todo lo que aparece previamente en cuanto a los margenes */
+
+
+     /* bordes */
+    /* border-bottom: seagreen;
+    border-top: yellow;
+    border-width: 5px;
+    border-style: solid; */
+
+    /* compacta todo los border separados en uno, los más usados son: */
+    border: 5px solid seagreen;
+    border-bottom: 15px solid red;
+
+    /* padding */
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 100px;
+    padding: 100px 25px 50px 0px ;
+
 }
 
-/* Selecciona todos los párrafos de la pág */
-p{
-    color:saddlebrown
+.empty {
+    height: 2000px;
+    background-color:red;
 }
 
-/* Todos los párrafos contenidos en #primero */
-#primero p { 
-    color: #3d3399
+h1 {
+    color: red;
 }
 
-/* Todos los enlaces de la pág */
-a{
-    color: yellow;
-}
-
-/* Todos los elementos em contenidos en #primero */
-#primero em{
-    background: #54ac0d; padding: .1em
-}
-
-/* Todos los elementos em de clase especial en toda la pág */
-em.especial{
-    background: #FFCC99; border: 1px solid
-#6c1b92; padding: .1em;
-}
-
-/* Elementos span contenidos en normal */
-.normal span{
-    font-weight: bold
-}
+/* en margen y padding no se añaden colores */

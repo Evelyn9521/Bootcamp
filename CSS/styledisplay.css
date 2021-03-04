@@ -1,0 +1,28 @@
+/* Tipos de display:none, inline, block, inline-block */
+
+/* se aplica a todos los box que están dentro de clase */
+[class^="box"] {
+    background-color: #66b2f0;
+}
+
+.box-0{
+    display: none;
+}
+
+.box-3, .box-4, .box-3 p, .box-4 p {
+    display: inline-block;
+}
+
+.box-5, .box-6,.box-5 p, .box-6 p {
+    display: inline;
+}
+
+/* centrar horizontalmente */
+.x-centered{
+    background-color: teal;
+    height: 50px;
+    width: 25%;
+
+    /* lo centra automaticamente */
+    margin: auto;
+}
