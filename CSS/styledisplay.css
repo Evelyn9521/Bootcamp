@@ -1,8 +1,12 @@
+body{
+    margin: 0;
+}
+
 /* Tipos de display:none, inline, block, inline-block */
 
 /* se aplica a todos los box que están dentro de clase */
 [class^="box"] {
-    background-color: #66b2f0;
+    /* background-color: #66b2f0; */
 }
 
 .box-0{
@@ -16,13 +20,153 @@
 .box-5, .box-6,.box-5 p, .box-6 p {
     display: inline;
 }
-
-/* centrar horizontalmente */
-.x-centered{
+.rectangle{
     background-color: teal;
     height: 50px;
     width: 25%;
+}
 
+
+.rectangle{
+    background-color: teal;
+    height: 50px;
+    width: 25%;
+}
     /* lo centra automaticamente */
+    .x-centered{
     margin: auto;
+}
+
+/* TIPOS DE POSICIONES */
+/* Posicion relativa,nos mueve el elemento desde donde está hacia donde yo quiera con los px que quiera */
+.pos-relative{
+    position: relative;
+    left: 150px;
+    top: -10px;
+    z-index: -1;
+}
+/* posicion absoluta , para que el elemento se quede dentro de padre, en el mismo, ponemos posicion relativa y en el hijo, ponemos posicion absolute*/
+.pos-absolute-parent{
+    height: 300px;
+    border: 15px solid tomato;
+    position: relative;
+}
+.pos-absolute-child{
+    height: 50px;
+    width: 50px;
+    background-color: #333;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -25px;
+    margin-top: -25px;
+}
+/* posicion fixed, fijado. se fija a un punto de la ventana */
+.pos-fixed{
+    background-color: #333;
+    padding: 20px 30px;
+
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1;
+}
+.pos-fixed a{
+    color: white;
+    text-decoration: none;
+}
+
+/* posicion stiky para que aparezca fija por ejemplo la barra de navegación cuando hago scroll */
+.pos-sticky{
+    background-color: steelblue;
+    padding: 15px 25px;
+
+    position: sticky;
+    top: 0;
+}
+.pos-sticky{
+    text-decoration: none;
+    color: white;
+}
+
+/* posicion flotante */
+.pos-float-parents{
+    border: 5px solid royalblue;
+    color: white;
+    font-size: 30px;
+
+    /* obliga al padre a respetar a los flotantes */
+    overflow: hidden;
+}
+.pos-float-child-1{
+    background-color: brown;
+    height: 100px;
+    width: 33.3%;
+    
+    float: left;
+}
+.pos-float-child-2{
+    background-color: darkblue;
+    height: 100px;
+    width: 33.3%;
+    
+    float: left;
+   
+}
+
+.pos-float-child-3{
+    background-color: darkorange;
+    height: 100px;
+    width: 33.3%;
+  
+}
+.pos-float-child-4{
+    background-color:yellowgreen;
+    height: 50px;
+    width: 100%;
+    clear: both;
+}
+
+
+/* overflow-gestion del desbordamiento del contenido */
+[class^="overflow-parent"]{
+    width: 200px;
+    height: 100px;
+    border: 3px dashed black;
+    margin-bottom: 150px;
+}
+
+
+.overflow-parent-1{
+    /* solo enseña lo que esta dentro d elos bordes, lo dema slo oculta */
+    overflow: hidden;
+}
+    /* enseña todo el contenido aunque salga fuera del borde */
+.overflow-parent-2{
+    overflow: visible;
+}
+
+.overflow-parent-3{
+    overflow: scroll;
+}
+
+
+
+
+/* Tmaño de cajas(box-sizing) */
+.box-sizing-parent{
+    width: 200px;
+    height: 200px;
+    border: 10px solid goldenrod;
+}
+
+.box-sizing-child{
+    width: 100%;
+    height: 50px;
+    background-color: gray;
+    border: 10px solid darkolivegreen;
+}
+.border-box{
+    margin-top: 10px;
+    box-sizing: border-box;
 }
