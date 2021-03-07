@@ -4,7 +4,7 @@
     height: 50vh;
 
     /* imagen de fondo */
-    /* background-image: url(AGP_C037_place_malaga_01.jpg.image.750.563.low.jpeg); */
+    background-image: url(AGP_C037_place_malaga_01.jpg.image.750.563.low.jpeg);
 
     /* left center rigth */
     background-position-x: center;
@@ -22,9 +22,9 @@
      /* fija la imagen en la pág */
 
 
+
      /* Margenes */
-   
-     margin-top: 10px;
+     margin-top: 100px;
      margin-right: 10px;
      margin-bottom: 10px;
      margin-left: 10px;
@@ -32,6 +32,7 @@
      /* -sobreescribe todo lo que aparece previamente en cuanto a los margenes */
 
 
+     
      /* bordes */
     /* border-bottom: seagreen;
     border-top: yellow;

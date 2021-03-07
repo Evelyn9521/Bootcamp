@@ -1,0 +1,20 @@
+
+.pagina{
+border: 1px solid #CCC;
+background-color: #E0E0E0;
+padding: 15px;
+}
+
+
+.derecha {
+
+float: right;
+}
+
+
+.izquierda {
+float: left;
+}
+.clear {
+clear: both;
+}

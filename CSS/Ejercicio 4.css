@@ -1,0 +1,27 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    border: 2px solid grey;
+   
+}
+.buscar{
+    float: right;
+}
+.logotipo{
+   float: left;
+}
+.border{
+    
+}
+.borderleft{
+    border: 2px solid grey;
+    overflow: hidden;
+    
+    
+}
+
