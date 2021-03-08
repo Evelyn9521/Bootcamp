@@ -1,20 +1,32 @@
-
-.pagina{
-border: 1px solid #CCC;
-background-color: #E0E0E0;
-padding: 15px;
+/* Estilos básicos */
+nav{
+    border: 2px solid #ddd;
+    background-color:rgb(241, 237, 237);
+    padding: 12px;
 }
 
-
-.derecha {
-
-float: right;
+nav a{
+    /* Quitar estilos a los enlaces se usa text-decoration */
+    text-decoration: none;
+    color: #333;
 }
 
+/* Solucion 1 con posicionamiento absoluto */
+/*  last-child seleciona elementos que no tienen identificador, en este caso se refiere al último hijo dentro de nav*/
+ nav {
+    position: relative;
+    /* ancho minimo que se le pone a la pág que no se minimice para que no se sobreponga las letras entre sí
+    min-width: 50px; */
+}
 
-.izquierda {
-float: left;
-}
-.clear {
-clear: both;
-}
+nav a:last-child{
+    position: absolute;
+    /* de la derecha se separa 12 pixeles del padre*/
+    right: 12px;
+ } 
+
+
+/* Solucion 2 con float */
+/* nav a:last-child{
+  float: right;
+} */

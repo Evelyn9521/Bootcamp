@@ -1,27 +1,65 @@
-
+/* todos los elementos incluyen borde y padding */
 *{
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
-
-header{
-    border: 2px solid grey;
-   
+/* Estilos generales */
+.container{
+    border: 2px solid gray;
+    padding:10px;
 }
-.buscar{
+/* estilos para header */
+.top-banner{
+    position: relative;
+}
+
+/* header */
+header{
+    margin-bottom: 20px;
+}
+
+.top-banner form{
+position: absolute;
+right: 10px;
+/* el top es para separa un 50% del padre */
+top: 50%;
+/* para centrarlo a la altura del logotipo, se le añade la mitad de pixeles */
+margin-top: -17px;
+}
+
+/* aside */
+.new>a, .new span{
+    /* se ponene en la misma linea respetando a los anteriores */
+    display:block
+
+}
+aside{
+    width: 25%;
+    float: left;
+}
+/* contenido central */
+section{
+    float: right;
+    width: 73%;
+}
+
+.main-content{
+    float: left;
+    width: 75%;
+}
+.main-content img{
+    float: left;
+    margin-right: 20px;
+}
+.side-content{
+    width: 24%;
     float: right;
 }
-.logotipo{
-   float: left;
-}
-.border{
-    
-}
-.borderleft{
-    border: 2px solid grey;
-    overflow: hidden;
-    
-    
-}
 
+/* footer */
+footer{
+margin-top: 20px;
+clear: both;
+}
+footer span{
+    float:right;
+}

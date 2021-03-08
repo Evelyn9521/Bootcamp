@@ -9,6 +9,14 @@ body{
     /* background-color: #66b2f0; */
 }
 
+
+/* pseudoelemento siempre con :: selecciona en este caso la primera letra del párrafo y se le añade los estilos que quieras, sin tener que estar dentro de un div x ejemplo */
+p::first-letter{
+    font-size: 3em;
+}
+/* pseudoclases, tienen sus etiqueta x ejemplo a y se puede coger la primera fila x ejemplo */
+
+
 .box-0{
     display: none;
 }

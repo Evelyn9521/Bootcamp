@@ -1,11 +1,29 @@
-.elemento{
-    border: 1px, coral, solid;
-    
-    
-
+/* quita el padding/relleno que hay en la derecha */
+ul{
+    padding-left: 0;
+    /* el ancho del recuadro de las listas */
+    width: 30%;
 }
 
-.ele1{
-    position: relative;
-   
+
+/* selecciona los ul y que dentro esté el li sin que haya nada en medio */
+ul>li {
+color: #333;
+background-color: rgb(235, 231, 231);
+padding: 3px;
+/* mete los puntos de la lista dentro del li */
+list-style-position: inside;
+list-style-image: url(../CSS/fast-forward-double-right-arrows.png);
+/* cursos se utiliza para cambiar el estilo de cursor */
+cursor:pointer;
+/* se añade borde a cada li individual */
+border: 2px solid lightgrey;
+}
+
+/* hover sirve para aplicar los estilos con solo pasar el cursos encima */
+ul>li:hover{
+color: red;
+background-color:gray;
+/* list-style-image: url(); se puede cambiar el icono anterior de color */
+
 }
