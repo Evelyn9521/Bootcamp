@@ -1,0 +1,75 @@
+body{
+    color: #fff;
+    background-color: #f4f4f4;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+.container{
+    padding:1px 10%;
+}
+.brand-banner{
+    background-color: coral;
+
+}
+.navbar{
+    background-color:rgb(60, 63, 63);
+}
+.navbar ul{
+    list-style: none;
+    padding: 0;
+}
+.navbar a{
+    color: white;
+    text-decoration: none;
+    font-size: 10px;
+    padding-right: 15px;
+}
+.imgheader{
+    background-image: url(juliana-barquero-9225STV9W-M-unsplash.jpg);
+    text-align: center;
+    background-position: center right;
+    margin-bottom: 15px;
+}
+
+.welcomeleft{
+    color: black;
+    float: left;
+    width: 74%;
+}
+
+.right{
+   float: right;
+   width: 26%;
+   background-color: rgb(60, 63, 63);
+}
+
+footer {
+clear: both;
+background-color: rgb(60, 63, 63);
+text-align: center;
+}
+.bottom{
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+
+/* media queries
+@media only screen and(max-width:768px){
+    {
+        float: none;
+        width: 100%;
+    }
+    {
+        margin-bottom: 30px;
+    }
+    {
+        font-size: 2em;
+        height: 1.3em;
+        margin: 20px 5px;
+    }
+    {
+        display: block;
+        margin-top: 15px;
+    }
+
+} */
