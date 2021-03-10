@@ -57,7 +57,9 @@ p::first-letter{
 .pos-absolute-parent{
     height: 300px;
     border: 15px solid tomato;
+  
     position: relative;
+
 }
 .pos-absolute-child{
     height: 50px;
@@ -196,4 +198,54 @@ p::first-letter{
     .responsive{
          width: 100%;
 }
+}
+
+
+/* Flexbox */
+.flex-parent{
+    display: flex;
+/* flex-direction: row; /* row y colum los más usados /filas y columnas*/
+/* flex-wrap: wrap; si no cabe en la pantalla te lo alinea abajo y el no wrap te respeta en la misma linea pero lo achica */ 
+flex-flow: row wrap; /* combina ambas propiedades */
+    justify-content:center; /* centra las cajas */
+    justify-content: flex-start; /* cajas empiezan por la izquiera */
+   
+    justify-content: space-between;/* espacio entre cajas */
+    justify-content: space-evenly; /* se reparte el espacio de form aequitativa */
+    justify-content: flex-end; /* cajas empiezan por el final */
+    justify-content: space-around; 
+
+    /* align-items: center;
+    align-items: flex-start; hacia arriba
+    align-items: flex-end; hacia abajo
+    align-items: stretch; por defecto, a lo largo de todo el eje vertical*/ 
+
+    border: 2px solid black;
+    height: 250px;
+}
+[class^="flex-child"]{
+ width: 250px;
+ 
+
+ display: flex;
+ justify-content: center;
+ align-items: center;
+
+}
+.flex-parent>div:nth-child(odd){ /* odd impar */ /* nth-child=selecciono a cualquiera dentro de un div */
+    background-color: #ddd;
+    color: #333;
+}
+.flex-parent>div:nth-child(even){ /* even par */
+    background-color: #333;
+    color:#ddd;
+}
+
+
+.flex-child-1{
+    flex-grow: 1; /* crece mas rapido que los otros elementos */
+    flex-shrink: 3; /* decrece mas rapido que los otros dos elementos */
+    flex-basis: auto;/*  coje el tamaño que tenga el elemento  */
+    flex: 0 2 auto; /* sustituye a las 3 anteriores */
+    align-self: center; /* sobreescribe lo que diga el padre */
 }
