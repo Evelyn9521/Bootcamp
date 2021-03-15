@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px 20px;
+   
+}
+
+header{
+    border-bottom: 2px solid rgb(197, 191, 191);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+}
+.columnleft{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+   
+    width: 20%;
+  
+    border-radius: 10px;
+    cursor: pointer;
+   
+}
+.product{
+   display: flex;
+   justify-content: center;
+}
+.product > button{
+    background-color: #6c2bd9;
+    border-radius: 8px;
+    color: white;
+    height: 30px;
+    width: 200px;
+    cursor: pointer;
+}
+
+
+ 
