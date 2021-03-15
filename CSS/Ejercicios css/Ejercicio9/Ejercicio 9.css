@@ -1,8 +1,11 @@
 [class^="grid-child"]{
     background-color: lightskyblue;
    
-    
+   
 }
+
+
+
 .grid-parent{
     display: grid;
     grid-template-columns:repeat(4, 90px);
@@ -13,3 +16,4 @@
 [class^="grid-child"]:hover{
     transform: scale(0.9) ; 
 }
+
