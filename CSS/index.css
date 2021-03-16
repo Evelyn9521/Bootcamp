@@ -18,10 +18,7 @@ header{
     padding-bottom: 10px;
 }
 .columnleft{
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-   
+
     width: 20%;
   
     border-radius: 10px;
