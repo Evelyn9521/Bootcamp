@@ -1,6 +1,22 @@
-div{
+.sized{
+    height: 100px;
+}
+
+
+#mi-container{
     background-color: red;
     a{
         color: white;
     }
+    button{
+        height:100%
+    }
+}
+$columns: 5;
+@for si from 1 through $columns {
+    .columns-#{si} {
+        width:(100% / $i);
+    }
+
+    
 }

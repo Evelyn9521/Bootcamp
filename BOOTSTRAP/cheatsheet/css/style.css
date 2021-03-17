@@ -1,8 +1,17 @@
-div {
-  background-color: red;
-}
-div a {
-  color: white;
-}
+/* Error: expected "$".
+ *    ,
+ * 16 | @for si from 1 through $columns {
+ *    |      ^
+ *    '
+ *   scss/style.scss 16:6  root stylesheet */
 
-/*# sourceMappingURL=style.css.map */
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: expected "$".\a    \2577 \a 16 \2502  @for si from 1 through $columns {\a    \2502       ^\a    \2575 \a   scss/style.scss 16:6  root stylesheet';
+}
