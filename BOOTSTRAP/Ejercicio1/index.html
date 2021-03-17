@@ -3,11 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ENLACE PARA BOOTSTRAP -->
     <link rel="stylesheet" href="bootstrap-4.6.0-dist/css/bootstrap.css">
+    <!-- ENLACE CON TU CSS QUE VAS MODIFICANDO SI ES NECESARIO -->
     <link rel="stylesheet" href="css/style.css">
     <title>Ejercicio 1</title>
 </head>
 <body>
+  <!-- BARRA DE NAVEGACIÓN CABECERA -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" href="#">Navbar</a>
@@ -42,10 +45,13 @@
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
               </form>
-              <button type="button" class="btn btn-success ml-3">Iniciar Sesion</button>
-    
+              <button type="button" class="btn btn-success ml-3" data-toggle="modal" data-target="#modal1">Iniciar Sesion
+              </button>
             </div>
+          
           </nav>
+          
+          <!-- CAROUSEL -->
           <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
               <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -73,6 +79,7 @@
             </a>
           </div>
     </header>
+    <!-- CARD/ TARJETAS -->
     <div class="card-group mt-5">
         <div class="card">
           <img src="image/oli-woodman-fwYZ3B_QQco-unsplash.jpg" class="card-img-top" alt="...">
@@ -151,6 +158,8 @@
           </div>
         </div>
       </div>
+      
+      <!-- TABLA -->
       <table class="table table-striped mt-5">
          
         <thead>
@@ -244,8 +253,36 @@
       </form>
 
     </div>
+    <div class="container-fluid bg-dark text-center">
+      <h3 class="footer">Full Stack WD Bootcamp</h3>
+    </div>
     
 
+    <!-- MODAL ENLAZADO CON INICIO DE SESION -->
+    <div class="modal" id="modal1" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Modal body text goes here.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <!-- SCRIPT PARA ENLAZAR CON CONTENIDOS DE BOOTSTRAP -->
     <script src="js/jquery-3.5.1.slim.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="bootstrap-4.6.0-dist/js/bootstrap.min.js"></script>
