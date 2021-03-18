@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheatsheet Javascript</title>
+</head>
+<body>
+    <h1>Procesar Javascript</h1>
+    <a href="#" onclick="console.log('hola desde un script inline')" >Inline script</a>
+    <a href="#">Internal script</a>
+    <a href="#">External script</a>
+
+
+
+
+    <!-- se pone al final del cocumento para que pueda procesar todo lo anterior -->
+    <script>
+        function saludo(){
+        alert("hola desde un script interno")
+        }
+        document.getElementsByTagName("a").item(1).addEventListener("click", saludo);
+    </script>
+    <!-- nuestro documento js -->
+    <script src="js/main.js"></script>
+</body>
+</html>
