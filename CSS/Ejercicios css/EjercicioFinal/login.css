@@ -55,4 +55,8 @@ hr{
         display: block;
     }
 
+    .picture {
+        height: 200px;
+    }
+
 }

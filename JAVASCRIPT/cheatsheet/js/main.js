@@ -12,7 +12,6 @@ function saludo(){
 console.log("Mensaje");
 
 
-
 // .............................Variables................................
 //var - function scope
 //let/const -block
@@ -158,3 +157,109 @@ person.walk();//estoy llamando a la funcion walk
 
 
 console.log(typeof{}, typeof[], typeof("")); // objeto, objeto, string
+
+
+//This //hace referencia a si mismo
+const person2 = {
+    name: "Thomas",
+    talk(){
+        console.log(this); //hace referencia person2 en este caso, reemplaza la variable
+        console.log(`me llamo ${this.name}`)
+    }
+
+}
+
+const person3 = {
+    name: "Sarah",
+    talk(){ //talk es una función
+        console.log(this); //hace referencia person3 en este caso, reemplaza la variable
+        console.log(`me llamo ${this.name}`)
+    }
+
+}
+person2.talk();
+person3.talk();
+
+
+console.clear();
+//......................ARRAYS..................
+let selectedColors = ["red", "blue",]; //array de string
+console.log(selectedColors, selectedColors.length, typeof selectedColors);
+
+selectedColors[2] = "green";// si no existe lo crea,  añadimos otro array 
+console.log(selectedColors, selectedColors.length);
+
+selectedColors.push("violet", "white"); // Con push se añade otro array directamente si no sabemos cuantos elementos hay.
+console.log(selectedColors, selectedColors.length);
+
+selectedColors.pop();
+console.log(selectedColors, selectedColors.length); //con pop se elimina el ultimo elemento del array en este caso white
+
+selectedColors.unshift("white");
+console.log(selectedColors, selectedColors.length);// unshift añade elemento al principio del array, es decir el primero elemento en aparecer.
+
+selectedColors.shift();
+console.log(selectedColors, selectedColors.length); // shift elimina el primer elemento que parece en el array, en este caso el white
+
+selectedColors.sort();  // ordena alfabeticamente.
+console.log(selectedColors, selectedColors.length);
+
+console.log(selectedColors.indexOf("red"));// me busca el elemento que yo le diga y me devuelve el indice de ese elemento
+console.log(selectedColors[selectedColors.indexOf("red")+1]); // me busca el elemento que va seguido de red, en este caso violet
+
+console.log(selectedColors.slice(1, 3)); // coge los elementos del 1 al 3, el 3 en este caso no lo incluye
+console.log(selectedColors);
+
+console.log(selectedColors.splice(1, 3)); // elimina los elementos a partir del  1 al 3
+console.log(selectedColors);
+
+
+//Ejercicio....Crea un objeto niño que tenga las propiedades nombre, altura género y amigoS. 
+//Amigos estará directamente vacio y lo añadiremos posteriormente 3 elementos con los nombres.
+//Desoués , añadiremos uno extra al inicio.
+
+let niño = {
+    nombre: "Lucas",
+    altura: 1.74,
+    género: "masculino",
+    amigoS: [],
+    loseFriend() {    
+        this.niño.amigoS.pop();
+
+    }
+
+}
+console.log(niño);
+niño.amigoS.push("Lucas", "Mario", "Juan");
+
+console.log(niño);
+niño.amigoS.unshift("Maria");
+
+niño.loseFriend();
+
+
+
+console.clear();
+
+// ..........................CONDICIONALES..............................
+const randomNumber = 9;
+const guessedNumber = "5";
+
+if(typeof randomNumber !== typeof guessedNumber){
+    console.log("tienes que introducir el mismo tipo");
+}
+
+
+
+
+
+/*if (randomNumber === guessedNumber) {
+    console.log("has acertado el número");
+
+} else if(randomNumber > guessedNumber){
+    console.log("el numero secreto es mayor");
+
+}else {
+    console.log("el numero secreto es menor");
+}*/
+
