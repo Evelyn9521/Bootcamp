@@ -132,8 +132,13 @@ let person={
     },// llama a una funcion. pre-ECMAS6
     jump() {
         console.log("HEY! Estoy saltando");
-    }//llama a una funcion ECMAS 6
+    },//llama a una funcion ECMAS 6
+    presentarse(){
+        console.log(`me llamo ${this.name}, tengo ${this.age} años y ${this.blonde ? "soy rubio":"soy moreno"}`); //TERNARY OPERATOR
+    }
 }
+person.presentarse();
+
 //se conoce por acceso por punto / dot notation
 console.log(person);
 console.log(`se llama ${person.name} y tiene ${person.age} años`);
@@ -222,18 +227,17 @@ let niño = {
     nombre: "Lucas",
     altura: 1.74,
     género: "masculino",
-    amigoS: [],
+    amigos: [],
     loseFriend() {    
-        this.niño.amigoS.pop();
-
+        this.amigos.pop();
     }
-
 }
-console.log(niño);
-niño.amigoS.push("Lucas", "Mario", "Juan");
 
 console.log(niño);
-niño.amigoS.unshift("Maria");
+niño.amigos.push("Lucas", "Mario", "Juan");
+
+console.log(niño);
+niño.amigos.unshift("Maria");
 
 niño.loseFriend();
 
@@ -249,11 +253,7 @@ if(typeof randomNumber !== typeof guessedNumber){
     console.log("tienes que introducir el mismo tipo");
 }
 
-
-
-
-
-/*if (randomNumber === guessedNumber) {
+if (randomNumber === guessedNumber) {
     console.log("has acertado el número");
 
 } else if(randomNumber > guessedNumber){
@@ -261,5 +261,120 @@ if(typeof randomNumber !== typeof guessedNumber){
 
 }else {
     console.log("el numero secreto es menor");
-}*/
+}
 
+//Ternary operator 
+
+let variable = 12 < 10 ? "el primero es menor" : " el primero es mayor";
+console.log(variable);
+
+//switch
+let option = 3;
+switch (option) {
+    case 1: //bloque de código para valor
+        console.log("option vale 1");
+        break; //si no ponemos el break, no se ejecuta nada.
+    case 2:
+        console.log("option vale 2");
+        break;
+    case 3:
+        console.log("option vale 3");
+        break;
+    default: //"de otro modo" p-seint
+        console.log("otra opcion");
+        break;
+}
+
+
+
+console.clear();
+// .....................FUNCIONES....................
+// Funciones Nombradas
+function greet(name, lastName){
+    return `hola ${name} ${lastName}. que tal?`;
+   
+}
+
+console.log(greet("Marcos", "Aurelio"));
+
+//funcion que devuelva el cuadrado de un número
+function cuadrado(number){
+     return number * number;
+}
+console.log(cuadrado(5)); //console.log siempre fuera de las funciones.
+
+//Funciones Anónimas
+let numbersArray = [5, 51, 1, 15, 9];
+console.log(numbersArray);
+numbersArray.sort(); //me lo ordena segun ASCII
+console.log(numbersArray);
+
+
+// function orderNumbers(a, b){
+//      if (a < b){
+//          return -1;
+//     }else if (a === b) {
+//         return 0;
+//     }else {
+//         return 1;
+//     }
+// }
+
+// numbersArray.sort(orderNumbers); ambos casos hacen lo mismo, este y el siguiente
+numbersArray.sort(function(a, b) {return a - b });
+console.log(numbersArray);
+
+
+console.clear();
+
+
+//Funciones de flecha / Arrow functions
+let perimeterOfSquare = function (side) { // Función anónima normal
+    return side * 4;
+    }
+    perimeterOfSquare = function (side) {return side * 4;} // (opcional) Una única línea
+    perimeterOfSquare = (side) => {return side * 4;} // Sustituyo function por la flecha después de params.
+    perimeterOfSquare = (side) => side * 4; // Si sólo quiero devolver algo, quito llaves y return.
+    perimeterOfSquare = side => side * 4; // Si sólo tiene 1 param, puedo quitar paréntesis.
+    
+    console.log(perimeterOfSquare(5));
+
+// console.log(typeof function () {});
+// console.log(typeof (() => {}));
+
+//Ejercicio. Transformar funcion anonima en funcion de flechas
+numbersArray.sort(function(a, b) {return a - b });
+numbersArray.sort((a, b) => a - b);
+
+//Ejercicio . Funcion flecha con el cuadrado de un nº
+let squareV2 = number => number*number;
+console.log(squareV2(5));
+
+
+
+//......................... FOR......................
+
+for (let i = 0; i <= 10; i++) {
+    console.log(`Indice: ${i}`);
+    
+}
+
+//definir y rellenar un array con el indice i
+const arrayX=[];
+for (let i = 0; i <= 10; i++) {
+    arrayX.push(i);
+}
+console.log(arrayX);
+
+//........................WHILE.......................
+let contador = 0;
+while(contador <= 10){
+    console.log(contador);
+    contador++;
+}
+
+
+//.......FOR EACH
+numbersArray.forEach(function(item, index){
+    console.log(`Indice ${index}: ${item}`);
+});
