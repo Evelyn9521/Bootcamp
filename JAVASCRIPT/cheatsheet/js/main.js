@@ -12,7 +12,7 @@ function saludo(){
 console.log("Mensaje");
 
 
-// .............................Variables................................
+// .............................VARIABLES................................
 //var - function scope
 //let/const -block
 
@@ -352,7 +352,7 @@ console.log(squareV2(5));
 
 
 
-//......................... FOR......................
+//......................... FOR.....................
 
 for (let i = 0; i <= 10; i++) {
     console.log(`Indice: ${i}`);
@@ -366,15 +366,60 @@ for (let i = 0; i <= 10; i++) {
 }
 console.log(arrayX);
 
-//........................WHILE.......................
+
+//......................WHILE.......................
 let contador = 0;
 while(contador <= 10){
     console.log(contador);
     contador++;
 }
 
+//.....................FOR EACH.......................pertecene al tipo de dato array
+console.log(numbersArray);
 
-//.......FOR EACH
 numbersArray.forEach(function(item, index){
     console.log(`Indice ${index}: ${item}`);
 });
+
+//for each con arrow functions
+numbersArray.forEach((item, index) => console.log(`Indice ${index}: ${item}`));
+
+//añadir los valores del array numbersArray a otherArray 
+let otherArray = [];
+
+numbersArray.forEach(item => otherArray.push(item));
+console.log(otherArray);
+
+
+//.....................FOR OF................. se usa para arrays y cualquier iterable como el string
+for(let item of numbersArray){
+    console.log(item);
+}
+
+
+//Continue
+for (let i = 0; i < 5; i++){
+    if( i === 3 || i ===2){ // con el continue salta a la siguiente iteración
+        continue;
+    }
+    console.log("using continue", i);
+}
+//Break
+let i = 0;
+let k;
+mainLoop: while(true){
+    console.log("outer loop", i);
+    i++;
+    k = 1;
+    while(true){
+        console.log("Inner loop", k);
+        k++;
+        if(i === 5 && k ===5){
+            break mainLoop;
+        } else if(k === 5){
+            break;
+        }
+    }
+}
+
+
