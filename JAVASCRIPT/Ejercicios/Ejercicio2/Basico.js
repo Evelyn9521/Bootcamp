@@ -3,13 +3,14 @@
 const myArray = ['fútbol', 'padel', 'natación', 'baloncesto', 'surf'];
 console.log(myArray);
 
+
 //2. Define un array inicialmente vacío. Añade tres elementos de tipo number posteriormente. Elimina por
 //completo el primero y añade dos nuevos números al inicio. En cada paso, imprime la longitud y el array
 //entero por consola utilizando un string template del tipo: `Longitud: ${}`.
 
 const Arraynumber = [25, 50, 75];
 console.log(Arraynumber);
-console.log('La longitud del array es',Arraynumber.length);
+console.log(`La longitud del array es, ${Arraynumber.length}`);
 
 Arraynumber.shift();
 console.log(Arraynumber);
@@ -23,14 +24,15 @@ console.log('La longitud del array es', Arraynumber.length);
 //3. Escribe una función nombrada que devuelva true si el argumento dado es de tipo boolean y false en
 //caso contrario.
 
-function myDay (e){
-    if (e > 6){
+function trueFalse (e){
+    if (typeof e === 'boolean'){
         return true;
     }else{
         return false;
     }
 }
-console.log(myDay(4));
+console.log(trueFalse(4));
+console.log(trueFalse(false));
 
 
 //4. Escribe una función que devuelva la longitud de un string recibido por argumento.
