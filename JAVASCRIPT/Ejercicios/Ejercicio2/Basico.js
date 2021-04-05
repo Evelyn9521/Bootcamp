@@ -14,11 +14,11 @@ console.log(`La longitud del array es, ${Arraynumber.length}`);
 
 Arraynumber.shift();
 console.log(Arraynumber);
-console.log('La longitud del array es', Arraynumber.length);
+console.log(`La longitud del array es, ${Arraynumber.length}`);
 
 Arraynumber.unshift(45, 89);
 console.log(Arraynumber);
-console.log('La longitud del array es', Arraynumber.length);
+console.log(`La longitud del array es, ${Arraynumber.length}`);
 
 
 //3. Escribe una función nombrada que devuelva true si el argumento dado es de tipo boolean y false en
@@ -33,6 +33,8 @@ function trueFalse (e){
 }
 console.log(trueFalse(4));
 console.log(trueFalse(false));
+       /* funcion de flecha
+      const trueFalse = (e)=> typeof e ==='boolean'; */
 
 
 //4. Escribe una función que devuelva la longitud de un string recibido por argumento.
@@ -45,10 +47,8 @@ console.log('Tiene una longitud de',stringnumber('Hola'),'letras');
 
 //5. Crea una función de flecha que reciba una cantidad de minutos y lo devuelva convertido en segundos.
 
- changeMinut = (e) =>{
-     return e * 60; 
+ const changeMinut = (e) => e * 60; 
 
-}
 console.log(changeMinut(5), 'segundos');
 
 
@@ -81,38 +81,41 @@ function array (e){
     return e[e.length - 1];
 }
 console.log(array([4, 5, 9, 6, 78]));
-// const array = [7, 8, 6, 2, 7];
-// console.log(array [array.length - 1]);
 
 
 //9. Un granjero necesita contar la cantidad de patas de los animales en sus diferentes granjas muy
 //frecuentemente, pero tiene tres especies: pollos (2 patas), vacas (4 patas) y cerdos (4 patas). Tu función
 //recibirá la cantidad de animales en ese orden y devolverá la cantidad de patas totales. Ejemplo:
 
-function myGranja(pollos, vacas, cerdos){
+function granja (pollos, vacas, cerdos){
     return (pollos * 2) + (vacas * 4) + (cerdos * 4);
 }
-console.log('Hay un total de', myGranja(7, 10, 9), 'patas');
+console.log('Hay un total de', granja(7, 10, 9), 'patas');
 
 
 //10. Crea una función que determine si dos datos recibidos por argumentos son del mismo tipo.
 
-function tipoDatos(e, i){
-    if (e.typeof === i.typeof){
+function tipoDatos(a, b){
+    if (typeof a === typeof b){
         return true;
     }else{
         return false;
     }
 }
 console.log(tipoDatos(4, 7));
+console.log(tipoDatos(4, 'hola'));
+/*  operador ternario //function tipoDatos(a, b){
+   return (typeof a === typeof b) ? 'true': 'false';
+} */
 
 
 //11. Crea una función que reciba un string con una frase y devuelva un array donde cada elemento será una
 //palabra de la frase original. Investigar método existente de los strings para este fin.
+
 function fraseArray(e){
     return e.split(" ");
 }
-console.log(fraseArray('mi nombre es evelyn'));
+console.log(fraseArray('Mi nombre es Evelyn'));
 
 
 //12. Inicializa dos objetos, address1 y address2 con las propiedades: provincia, ciudad, municipio, código
@@ -162,7 +165,7 @@ console.log(address2);
 //mismo tipo de dato. Debemos usar el operador lógico “&&”. Prueba tu función con dos estos inputs:
 
 function strictEquality(a, b){
-    if (a === b && a.typeof === b.typeof){
+    if (a == b && typeof a == typeof b){
         return true;
     }else{
         return false;
@@ -206,7 +209,7 @@ console.log(emptyString('Hola'), 'El estring no está vacío');
 // console.log(myArray);
 
 let e = 0;
-while (e <= myArray.length-1){
+while (e < myArray.length){
     console.log(`indice ${e}: ${myArray[e]} `);
     e++;
 }
@@ -224,10 +227,10 @@ myArray.forEach((item, index)=> console.log(`index ${index}: ${item}`));
 
  //18. Crea una función que reciba un string y un número N y devuelva el string original repetido N veces.
 
-function repeatstring(a, b){
+function repeatString(a, b){
     return a.repeat(b);
 }
-console.log(repeatstring('No haré memes sobre el profesor. ', 2));
+console.log(repeatString('No haré memes sobre el profesor. ', 2));
 
 
 //19. Crea una función que recibe un objeto con dos campos, votos positivos y votos negativos y que devuelva
@@ -258,7 +261,7 @@ console.log(mixArray(["hola", 2, {}, [], null, undefined]));
    function Parseados(array){
        const array3=[];
     for (let i = 0; i<array.length; i++){
-        array3[i]= parseFloat(array[i]);
+        array3[i]= parseFloat(array[i]);//puede sustituirse Number por parsefloat y coje tanto los enteros como decimales
     }
     return array3;
    }
