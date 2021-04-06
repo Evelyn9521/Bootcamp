@@ -312,6 +312,8 @@ function functionB(e){
 }
 console.log(functionB({country:'spain', years:'22', name: 'Jose'}));
 
+//Object.entries = devuelven las dos, country y spain en un mismo array;
+
 
 //26. Crea una función que invierta un string.
 
@@ -325,7 +327,11 @@ function invertir(e) {
     }
     return cadenaInvertida;
   }
-  console.log(invertir('Hola mi nombre es Evelyn'));
+  console.log(invertir('Mi nombre es Evelyn'));
+
+ /*  function invertir(e){
+      return e.split('').reverse().join('');
+  } Otra manera de invertir un string*/
 
 
   //27. Crea una función que compare strings sin tener en cuenta las mayúsculas / minúsculas.
@@ -337,17 +343,21 @@ function comparation(a, b){
     }else{
         return false;
     }
+    // return a.toUpperCase() == b.toUpperCase();
 }
-console.log(comparation('evelyn', 'EVELYN'));
+console.log(comparation('evelyn', 'EveLyN'));
 
 
 //28. Crea una función que convierta en mayúscula sólo la primera letra de cada palabra de un string dado. El
 //apartado 11 será de ayuda. Investigar cómo unir un array de strings en un único string.
 
+function letraMayuscula (a) {
+    a = a.toLowerCase().split(' ').map((a) => a.charAt(0).toUpperCase() + a.substring(1)).join(' ');
 
+    console.log(a);
+}
 
-
-
+letraMayuscula('hola mi nombre es evelyn');
 
 
 //29. Crea una función en una única línea que reciba un valor lógico y devuelva el opuesto.

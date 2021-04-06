@@ -49,7 +49,7 @@ const changeBackground = (element, color)=>element.style.backgroundColor=color;
 //Properties/propiedades
 //children[0].innerHTML ="child 1 v2"  //innerhtml selecciona todo lo que tengas dentro en este caso dentro de parent
 console.log(children[0].innerHTML);// imprime etiquetas html
-console.log(children[0].textContent);//ignora etiquetas html
+console.log(children[0].textContent);//ignora etiquetas html, imprime solo el texto
 
 console.clear();
 
@@ -64,9 +64,10 @@ console.log("classlist:", parent1.classList);
 
 parent1.setAttribute("name", "nombre-del-parent-1"); //te lo añade, y si existe te lo sobreescribe
 
-
+//parent1.className="d-flex flex-direction" todo lo que esté dentro del atributo class, sobreescribe todo
 
 console.clear();
+
 //create/remove/ elements
 
 // se crea un div dentro del elemento que quieras en html
