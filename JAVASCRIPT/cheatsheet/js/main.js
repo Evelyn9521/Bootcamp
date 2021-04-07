@@ -139,6 +139,8 @@ let person={
 }
 person.presentarse();
 
+
+
 //se conoce por acceso por punto / dot notation
 console.log(person);
 console.log(`se llama ${person.name} y tiene ${person.age} años`);
@@ -184,6 +186,28 @@ const person3 = {
 }
 person2.talk();
 person3.talk();
+
+
+
+//Object Constructor using functions
+function Car(brand, color, weight, topSpeed){
+    this.brand = brand;
+    this.color = color;
+    this.weight = weight;
+    this.topSpeed = topSpeed;
+    this.getDescription = function(){
+        return `this ${this.color} ${this.brand} weigth ${this.weight} kilos and can reach up to ${this.topSpeed} kms/h`
+    }
+}
+    const car1 = new Car('Mercedes', 'red', 1000, 200);
+    const car2 = new Car('volvo', 'white', 2000, 300 );
+    const car3 = new Car('Audi', 'blue', 1500, 175);
+
+    console.log(car1, car2, car3);
+    console.log(car2.weight); 
+    console.log(car3.getDescription());
+
+
 
 
 console.clear();

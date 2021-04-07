@@ -116,15 +116,69 @@ document.querySelector("#colorsSelect").addEventListener("change", e => {
 
 
 //10.Incluir un botón que al pulsarlo genere un número aleatorio y mantenga en una lista actualiza el número de elementos que se han generado, los que son pares y los que son impares.
+const currentRandom = document.getElementById("currentRandom");
+const totalNumbers = document.getElementById("totalNumbers");
+const oddNumbers = document.getElementById("oddNumbers");
+const evenNumbers = document.getElementById("evenNumbers");
 
+document.getElementById("randomButton").onclick = () => {
+    const randomNumber = Math.floor(Math.random()*100)
+    currentRandom.textContent = randomNumber;
 
+    totalNumbers.textContent++ //=  parseFloat(totalNumbers.textContent) +  1;
 
+    randomNumber % 2 === 0 ? evenNumbers.textContent++:oddNumbers.textContent++
+};
 
+//El parsefloat se puede sustituri por Number, hace que el string sea convierta a nº
+/* parseInt, se carga los nº decimales
+Math.floor, se carga los nº decimales */
 
 
 //11.Construir una lista que tenga números. Añadir un input donde poder añadir números y un botón. Al pulsar el botón, si el número ya existe en la lista, mostrar un mensaje de error, si no existe, lo añadirá al principio.
+const ul_2 = document.getElementById("ul-2");
+const input_4 = document.getElementById("input-4");
+const button_11 = document.getElementById("button-6");
+
+const myArray = [];
+
+function addNumber() {
+    const num = input_4.value;
+    if (myArray.includes(num)) {
+        alert("error");
+    } else {
+        const li = document.createElement("li");
+        ul_2.prepend(li);
+        li.textContent = num;
+        myArray.push(num);
+    }
+}
 
 
+button_11.addEventListener("click", addNumber);
 
 
-//12.Crearemos una clase .btnen CSS que le de ciertos estilos a un botón. Al hacer clicken el botón haremos “toggle” o alternaremos esa clase, es decir, si está presente la quitaremos y si no está, la añadiremos.
+//12.Crearemos una clase .btn en CSS que le de ciertos estilos a un botón. Al hacer clicken el botón haremos “toggle” o alternaremos esa clase, es decir, si está presente la quitaremos y si no está, la añadiremos.
+document.querySelector("#toggler").onclick = (e) => e.target.classList.toggle("btn")
+
+
+//Apartado extra: Refactorizar Código
+const buttons = document.getElementsByClassName('btn-red');
+
+// buttons[0].addEventListener('click', () => {
+//     buttons[0].style.backgroundColor = "red";
+// });
+
+// buttons[1].addEventListener('click', () => {
+//     buttons[1].style.backgroundColor = "red";
+// });
+
+// buttons[2].addEventListener('click', () => {
+//     buttons[2].style.backgroundColor = "red";
+// });
+
+Array.from(buttons).forEach(button => {
+    button.addEventListener("click", function (e){
+        e.target.style.backgroundColor = "red";
+    });
+});

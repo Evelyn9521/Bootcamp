@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio 1</title>
-   
+   <style>
+       .btn{
+           background-color: brown;
+       }
+   </style>
 </head>
 <body>
     <h2>Apartado 1</h2>
@@ -58,7 +62,30 @@
         <option value="pink">pink</option>
     </select>
 
+    <h2>Apartado 10</h2>
+    <p>Aleatorio <span id="currentRandom" ></span></p> 
+    <p>Nº totales <span id="totalNumbers" >0</span></p>
+    <p>Impares:<span id="oddNumbers" ></span></p>
+    <p>Pares:<span id="evenNumbers" ></span></p>
 
+    <button id="randomButton" >Generar random number</button>
+
+    <h2>Apartado 11</h2>
+    <ul id="ul-2"></ul>
+    <input type="text" id="input-4">
+    <button id="button-6">Botón 6</button>
+
+
+    <h2>Apartado 12</h2>
+    <button id="toggler" >Toggle Class .btn</button>
+
+
+    <h2>Apartado extra: Refactorizar Código</h2>
+    <div class="buttons">
+        <button class="btn-red">Botón 1</button>
+        <button class="btn-red">Botón 2</button>
+        <button class="btn-red">Botón 3</button>
+    </div>
 
     <script src="js/main.js"></script>
 </body>
