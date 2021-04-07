@@ -1,7 +1,7 @@
 //Apartado 1. Partimos de un HTML con un div vacío.
 //Con JS, añadir dos elementos p con un texto dentro
 
-const div = document.getElementsByClassName("div")[0];
+const div = document.getElementsById("#divVacio");
 
 console.log(div);
 const p = document.createElement("p");
