@@ -375,6 +375,85 @@ let squareV2 = number => number*number;
 console.log(squareV2(5));
 
 
+console.clear();
+//................//  Higher orther Functions...................
+//MAP...sobreescribe a otra funcion y se cambia a lo que le mande
+
+// let arr1 = [1, 2, 3];
+// let arr2 =[];
+
+// for(let num of arr1){
+//     arr2.push(num*2);
+// }
+
+// console.log(arr1, arr2);
+
+arr1 = [1, 2, 3]
+arr2 = arr1.map(num => num*2);
+
+console.log("Resultado con Map:", arr1, arr2);
+
+// A partir de un array con años de nacimiento, calcular edades
+const birthYears = [1980, 1990, 1975, 1970];
+const years =birthYears.map(num =>2021 - num);
+console.log(birthYears, years);
+
+
+//FILTER....coge los numeros filtrados mayores de 50 en este caso
+// const prices =[150, 50, 49, 51, 15, 237];
+// const expensives =[];
+
+// for(let price of prices){
+//     if (price >= 50){
+//         expensives.push(price);
+//     }
+// }
+const prices =[150, 50, 49, 51, 15, 237];
+const expensives = prices.filter(num=> num>50);
+console.log(prices, expensives);
+
+//filter por objeto
+const cars =[
+    {
+        brand: 'BMW',
+        year:1999,
+        plateNumber:'HY35467'
+    },
+    {
+        brand: 'Audi',
+        year:1959,
+        plateNumber:'HY35467'
+    },
+    {
+        brand: 'Nissan',
+        year:2010,
+        plateNumber:'HY35467'
+    },
+];
+console.log(cars.filter(car =>car.year >2008));
+
+
+
+console.log(cars.map(car =>car.brand));
+
+
+
+//SORT..ordena en este caso de menos a mayor
+cars.sort((car1, car2)=> car1.year - car2.year);
+console.log(cars);
+
+
+
+//REDUCE... va acumulando datos
+
+const arr = [10, 7, 13, 20];
+console.log(arr.reduce((sum, currentNumber) => sum + currentNumber));
+
+
+
+
+
+
 
 //......................... FOR.....................
 
