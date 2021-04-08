@@ -1,4 +1,5 @@
-
+//CREAMOS EL CONSTRUCTOR DEL USUARIO CON SUS PROPIEDADES Y MÉTODOS
+//el this se usa siempre acompañando la propiedad en caso del constructor
 function User(name, firstLastName, secondLastName, email, age, city, productsCount) {
     this.name = name;
     this.firstLastName = firstLastName;
@@ -15,33 +16,30 @@ function User(name, firstLastName, secondLastName, email, age, city, productsCou
     }
  }
 
-//Data
+
+//RELLENAMOS EL ARRAY CON VARIOS USUARIOS
+//se utiliza siempre el new cuando trabajamos con un constructor en este caso User
 const users =[
   new User('Fran', 'Gómez','perez', 'fgm@gmail.com', 35, 'Málaga',0),
   new User("Lucía", "García", "Ruíz", "lgarcia@gmail.com", 41, "Madrid", 0),
   new User("María", "Núñez", "Coronado", "mnunez@gmail.com", 18, "Albacete", 0)
 ];
 
-//Selectors
+//CREAMOS EL HTML Y CSS NECESARIOS Y ACCEDEMOS DESDE JS A LOS ELEMENTOS NECESARIOS DEL DOM
 const select = document.querySelector("#userSelect");
 const list = document.querySelector("#userInfo");
 const incrementButton = document.querySelector("#incrementButton");
 const emptyButton = document.querySelector("#emptyButton");
 
-//Rellenar select con opciones
+
+//RELLENAMOS EL SELECTOR CON EL NOMBRE DE CADA USUARIO
 for(let user of users){
     const newOption = document.createElement('option');
     newOption.textContent = user.name;
     select.appendChild(newOption);
 }
-/* users.forEach(item => {
-  const newOption = document.createElement('option');
-    newOption.textContent = user.name;
-    select.appendChild(newOption);
-}) */
 
-
-//Rellenar la lista con la info de un usuario
+//RELLENAMOS LA LISTA CON TODAS LAS PROPIEDADES DE UN USUARIO CUALQUIERA
 function fillList(user){
   list.innerHTML = "";
 
@@ -57,8 +55,8 @@ function fillList(user){
   }
 }
 
-//Estado inicial 
-fillList(users[0]);
+
+fillList(users[0]);//ESTADO INCIAL
 
 function processProducts(e){
   const selectedUser =users.find(user => user.name === select.value);
@@ -71,7 +69,7 @@ function processProducts(e){
 }
 
 
-//Añadir listener
+//AÑADIMOS LISTENERS
 select.addEventListener("change", e =>{
   const selectedUser =users.find(user => user.name === select.value);
   fillList(selectedUser);
