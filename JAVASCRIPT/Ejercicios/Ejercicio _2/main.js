@@ -16,6 +16,7 @@ function User(name, firstLastName, secondLastName, email, age, city, productsCou
     }
  }
 
+ 
 
 //RELLENAMOS EL ARRAY CON VARIOS USUARIOS
 //se utiliza siempre el new cuando trabajamos con un constructor en este caso User
@@ -24,6 +25,7 @@ const users =[
   new User("Lucía", "García", "Ruíz", "lgarcia@gmail.com", 41, "Madrid", 0),
   new User("María", "Núñez", "Coronado", "mnunez@gmail.com", 18, "Albacete", 0)
 ];
+
 
 //CREAMOS EL HTML Y CSS NECESARIOS Y ACCEDEMOS DESDE JS A LOS ELEMENTOS NECESARIOS DEL DOM
 const select = document.querySelector("#userSelect");
