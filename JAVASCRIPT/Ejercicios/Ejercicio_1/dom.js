@@ -69,8 +69,21 @@ textarea.addEventListener("input", function(e){
     }
 });
 
+//6. Añadir un input de tipo texto con leyenda: “Escribir un número par”. Añadir un botón. Al pulsar el botón
+//nos validará si el número es par o no. En caso negativo, cambiar los bordes del input a rojo.
+//Para revertir el estado de una propiedad, podemos utilizar el valor “revert” o dejarla vacío.
 
+const input = document.getElementById("input");
+const parButton = document.getElementById("parButton");
 
+input.parButton.addEventListener("click", e=>{
+    if(input.value % 2 === 0){
+        return input.style.border = "";
+    }else{
+        return input.style.border = "2px solid red"
+    }
+    
+});
 
 
 
