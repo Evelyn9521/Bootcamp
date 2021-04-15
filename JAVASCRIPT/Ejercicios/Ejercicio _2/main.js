@@ -56,9 +56,10 @@ function fillList(user){
     }
   }
 }
+fillList(users[0]);
 
 
-fillList(users[0]);//ESTADO INCIAL
+
 
 function processProducts(e){
   const selectedUser =users.find(user => user.name === select.value);

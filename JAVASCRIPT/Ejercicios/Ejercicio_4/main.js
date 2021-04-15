@@ -84,10 +84,5 @@ addBookButton.addEventListener("click", e =>{
 
     updateTable();
 
-    // titleInput.value= ""; 
-    // authorInput.value= ""; 
-    // salesInput.value= ""; 
-    // priceInput.value= "";        
-
     addBookButton.parentNode.removeEventListener();
 });
