@@ -21,6 +21,7 @@ let books = [
     new Book(10, 'La suerte de mi vida', 'Patricia Lozano', 300, 14),
 
 ];
+
 // let displayedBooks = books; //formas para copiar el array
 let displayedBooks = [...books];
 // let displayedBooks = Array.from(books);
@@ -32,6 +33,7 @@ const authorInput = document.getElementById("authorInput");
 const salesInput = document.getElementById("salesInput");
 const priceInput = document.getElementById("priceInput");
 const addBookButton = document.getElementById("addBookButton");
+
 const tfoot = document.querySelector("tfoot");
 
 // Para cada elemento del array, tendremos que crear una nueva fila en la tabla 

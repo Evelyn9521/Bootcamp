@@ -45,7 +45,7 @@ console.log(incrementSalary);
 //7...USANDO REDUCE, OBTENER EL COSTE TOTAL DE TODOS LOS SUELDOS, TENIENDO EN CUENTA QUE A LA EMPRESA
 //LE CUESTA TENER A UN EMPLEADO SU SUELDO MÁS UN 15% DE IMPUESTOS.
 
-const totalCost = employees.reduce((sum, employee) =>sum + employee.salary *1,15, 0 ); 
+const totalCost = employees.reduce((sum, employee) =>sum + employee.salary *1,15, 0 );//valor inicial del primer argumento para que parta desde 0 
 console.log('La suma total de los sueldos es de ', totalCost);
 
 
