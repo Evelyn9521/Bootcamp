@@ -61,9 +61,8 @@ function updateTable(){
         </tr>`;
     });
     //Apartado 3 del ejercicio 5
-    const totalPrice = displayedBooks.reduce((priceSum, book) => {
-        return priceSum + book.price;
-    }, 0);
+    const totalPrice = displayedBooks.reduce((priceSum, book) => priceSum + book.price, 0);
+    
     tfoot.textContent = `precio total ${totalPrice}`;
 }
 
@@ -118,9 +117,7 @@ const priceHeader = document.querySelector("#priceHeader");
 let ascendingOrder = true;
 
 filterInput.addEventListener("input", e =>{ //el input puede cambiarse por change
-    //teniendo en cuenta las mayusculas
-   /*  displayedBooks = books.filter(book=> book.title.includes(e.target.value));  *///devuelve verdadero si es un string
-   //sin tener en cuenta las minusculas
+
    displayedBooks = books.filter(book=>{
 
     return book.title.toUpperCase().includes(e.target.value.toUpperCase());
@@ -131,13 +128,14 @@ filterInput.addEventListener("input", e =>{ //el input puede cambiarse por chang
 
 //Apartado 2...Ordenar, precio ascendente y descendente
 priceHeader.style.cursor = "pointer"
-priceHeader.addEventListener("click", e => {
-    ascendingOrder = !ascendingOrder;
 
-    document.querySelector("span").innerHTML = ascendingOrder ? "&uarr;" : "&darr;"
+priceHeader.addEventListener("click", e => {
+     ascendingOrder = !ascendingOrder;
+
+    // document.querySelector("span").innerHTML = ascendingOrder ? "&uarr;" : "&darr;"
 
     displayedBooks.sort((book1, book2) =>{
-        return ascendingOrder?book1.price - book2.price : book2.price - book1.price;
+        return ascendingOrder ? book1.price - book2.price : book2.price - book1.price;
     });
     updateTable();
 });

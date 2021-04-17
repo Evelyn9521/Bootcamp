@@ -70,7 +70,7 @@ updateTable();
 
 //AÑADIR UN NUEVO LIBRO
 addBookButton.addEventListener("click", e =>{
-    e.preventDefault(); //para que no se actualice la pg cada vez que se haga un cambio
+    e.preventDefault(); //para que no se actualice la pg cada vez que se haga añada un libro en este caso
 
     const newID = books[books.length -1].ID + 1;
 
