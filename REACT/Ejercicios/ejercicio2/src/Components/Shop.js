@@ -1,6 +1,7 @@
+//Importamos el archivo List
 import List from "./List"
 
-
+//Creamos la funcion de Shop y le añadimos el array de objetos con el que queremos trabajar
 export default function Shop(){
     const shop = {
         electronics: [
@@ -19,11 +20,12 @@ export default function Shop(){
             {id: 35, products: "Arena de gato", brand: "Limpior", price: 1.10},
         ]
     };
+    //accedemos a cada objeto a través de la constante shop con el punto seguido del nombre del objeto
     return(
         <div>
-            <List category="electronics" products={shop.electronics}/>
-            <List/>
-            <List/>
+            <List category="electronics" products={shop.electronics} brand={shop.brand} model={shop.model} price={shop.price}/>
+            <List category="groceries" products={shop.groceries} />
+            <List category="pets" products={shop.pets}/>
         </div>
     )
 }
