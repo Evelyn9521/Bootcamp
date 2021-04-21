@@ -20,10 +20,10 @@ export default function Shop(){
             {id: 35, products: "Arena de gato", brand: "Limpior", price: 1.10},
         ]
     };
-    //accedemos a cada objeto a través de la constante shop con el punto seguido del nombre del objeto
+    //Accedemos a cada objeto a través de la constante shop con el punto seguido del nombre del objeto
     return(
         <div>
-            <List category="electronics" products={shop.electronics} brand={shop.brand} model={shop.model} price={shop.price}/>
+            <List category="electronics" products={shop.electronics}/>
             <List category="groceries" products={shop.groceries} />
             <List category="pets" products={shop.pets}/>
         </div>
