@@ -11,6 +11,7 @@ export default function Counter() {
         //     setCount(count + 1) otra forma de parar el contador cuando se llega hasta 10
         // }
         count <=9 && setCount(count + 1)
+        
     }
     
     return (
