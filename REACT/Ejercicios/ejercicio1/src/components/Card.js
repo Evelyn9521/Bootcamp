@@ -5,7 +5,7 @@ export default function Card(props) {
       <div className="card-body">
         <h5 className="card-title">{props.title}</h5>
         <p className="card-text">{props.paragraph}</p>
-        <a href={props.href} class="btn btn-primary">{props.linkText}</a>
+        <a href={props.href} className="btn btn-primary">{props.linkText}</a>
       </div>
    </div>
     )

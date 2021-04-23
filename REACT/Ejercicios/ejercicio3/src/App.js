@@ -15,7 +15,7 @@ function App() {
   return (
     <div className="container">
        <h2>ListBook</h2>
-      <Schedule contact={contacts} setContacts={setContacts}/>
+      <Schedule contacts={contacts} setContacts={setContacts}/>
       
       <h2>New Contact</h2>
       <Form setContacts={setContacts}/>  {//funcion para modificar el array (los contactos) en el form
