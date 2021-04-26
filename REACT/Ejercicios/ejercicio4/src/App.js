@@ -12,15 +12,15 @@ function App() {
 
     fetch("https://raw.githubusercontent.com/BC-FSWD/todo-list/master/todo-list.json")
       .then(response => response.json())
-      .then(data => setToDos(data.splice(0, 20)));
+      .then(data => setToDos(data.slice(0, 20)));
     
-  }, [])
+  }, []);
 
     return (
       <div className="container">
-        <h2>To-dos List</h2>
+         <h1>To-dos List</h1>
+         <Input setToDos={setToDos}/>
         <ToDos lists={toDos} setToDos={setToDos}/>
-        <Input/>
       </div>
     );
 }
