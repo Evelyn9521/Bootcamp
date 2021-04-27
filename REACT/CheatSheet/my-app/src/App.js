@@ -6,13 +6,14 @@ import './App.css';
 import {useState, createContext} from "react"
 import UseContext from './components/UseContext';
 
+import Router from "./Router";
+
 export const GlobalContext = createContext();
 
 
 function App() {
 
 const [show, setShow] = useState(true);
-
 
 
   return (
@@ -25,10 +26,12 @@ const [show, setShow] = useState(true);
      <FirstComponents />
      <SecondComponent/>
      <ThirdComponent/> */}
-
+{/* 
       <GlobalContext.Provider value="Soy un string guardado en un contexto">
         <UseContext/>
-      </GlobalContext.Provider>
+      </GlobalContext.Provider> */}
+
+      <Router/>
     </div>
   );
 }
