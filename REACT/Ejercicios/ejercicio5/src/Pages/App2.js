@@ -1,14 +1,13 @@
 //Importamos el archivo de shop 
 import Shop from "../Components/Shop"
-import './App.css';
+// import './App.css';
 
-function App() {
+function App2() {
   return (
     <div className="App">
-    <Shop 
-    />
+    <Shop/>
     </div>
   );
 }
 
-export default App;
+export default App2;

@@ -1,9 +1,9 @@
 import {useState} from "react";
-import './App.css';
+//  import './App.css';
 import Schedule from "../Components/Schedule";
 import Form from "../Components/Form";
 
-function App() {
+function App3() {
 
   const initialState =[
     {name: "Lucas", lastName: "Gómez",direction: "C/ Luz",city: "Málaga",postalCode: 29005,phoneNumber: 607258741},
@@ -19,8 +19,8 @@ function App() {
       
       <h2>New Contact</h2>
       <Form setContacts={setContacts}/>  {//funcion para modificar el array (los contactos) en el form
-}</div>
+}   </div>
   );
 }
 
-export default App;
+export default App3;

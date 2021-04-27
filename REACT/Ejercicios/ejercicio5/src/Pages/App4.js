@@ -1,9 +1,9 @@
-import './App.css';
+// import './App.css';
 import ToDos from "../Components/ToDos";
 import Input from "../Components/Input";
 import {useEffect, useState} from "react";
 
-function App() {
+function App4() {
 
 
   const [toDos, setToDos] = useState([])
@@ -25,4 +25,4 @@ function App() {
     );
 }
 
-export default App;
+export default App4;

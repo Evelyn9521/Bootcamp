@@ -2,7 +2,7 @@
 import Card from "../Components/Card" // {Card2}
 
 
-function App() {
+function App1() {
   return (
     <div className="App">
       <Card title="Título 1"
@@ -22,6 +22,6 @@ function App() {
 }
 
 
-export default App ;
+export default App1 ;
 
 
