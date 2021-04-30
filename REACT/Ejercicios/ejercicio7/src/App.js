@@ -18,14 +18,14 @@ const [movies, setMovies] = useState([]);
 
   return (
     <div className="App">
-      <h2>PREMIERES</h2>
+      <h2>PREMIERS</h2>
       <Movies movies={movies} setMovies={setMovies}/>
       <DetailsMovies setMovies={setMovies}/>
+
+      
     </div>
   );
 }
-
-
 
 
 export default App;
