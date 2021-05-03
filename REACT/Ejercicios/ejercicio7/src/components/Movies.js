@@ -1,7 +1,7 @@
 
-// import {useHistory} from "react-router-dom";
 import {useEffect, useState} from "react";
-
+import { useHistory } from "react-router-dom";
+import "./app.css"
 export default function Movies() {
    
   const [movies, setMovies] = useState([]);
@@ -13,21 +13,32 @@ export default function Movies() {
       .then(data => setMovies(data.results));
   }, []);
 
+  const history = useHistory();
+
+  function handleClick(movie_id){
+      history.push(`/details/${movie_id}`)
+  }
+
     return (
         <div>
             {
                 movies.map((movie)=>{
                     
                     return(
-                        <div className="card w-50 m-auto">
-                        <img className="card-img-top" src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt="Card image cap"/>
-                        <div className="card-body">
-                            <h5 className="card-title">{movie.title}</h5>
-                            <p className="card-text">{movie.overview}</p>
-                            <span>{movie.release_date}</span>
+                        <div className="card w-50 h-30 m-auto"class="card1" >
+                            <img className="card-img-top h-30" src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt="Card image cap"/>
+                            <div className="card-body" >
+                                <div >
+                                <h5 className="card-title">{movie.title}</h5>
+                                <p className="card-text">{movie.overview}</p>
+                                <span>{movie.release_date}</span>
+                                </div>
+                                <div class="button"> 
+                                    <button className="btn btn-warning" onClick={()=>handleClick(movie.id)}>More info {movie.id}</button>
+                                </div>
+                            </div>
+                            
                         </div>
-                        <button className="btn btn-warning">More info</button>
-                    </div>
                     )
                    
                 })
