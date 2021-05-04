@@ -2,6 +2,7 @@ import {useState, useEffect} from "react";
 import { useParams } from "react-router-dom";
 import "./app.css"
 
+
 export default function DetailsMovies() {
 
 const [details, setDetails] = useState({})
@@ -14,11 +15,6 @@ useEffect(() => {
       .then(data => setDetails(data));
   }, []);
 
-//   const history2 = useHistory()
-//   function clickIMDb(){
-//       history2.push()
-
-//   }
 
     return (
                     <div className="card w-25 m-auto" class="card1">
@@ -33,7 +29,7 @@ useEffect(() => {
                                 <p>Vote average: {details.vote_average}</p>
                             </div>
                         </div>
-                        <button className="btn bg-success" >IMDb</button>
+                       <a href={`https://m.imdb.com/title/${details.imdb_id}`}><button className="btn bg-success">IMDb</button></a>
                     </div>
     )
 }
