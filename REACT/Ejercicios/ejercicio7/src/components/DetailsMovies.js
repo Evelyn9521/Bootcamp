@@ -17,7 +17,7 @@ useEffect(() => {
 
 
     return (
-                    <div className="card w-25 m-auto" class="card1">
+                    <div className="card w-25 m-auto" class="card1 container">
                         <div>
                             <img className="card-img-top " src={`https://image.tmdb.org/t/p/w500${details.poster_path}`} alt="Card image cap"/>
                         </div>
@@ -27,9 +27,10 @@ useEffect(() => {
                                 <p className="card-text">{details.overview}</p>
                                 <date>Date: {details.release_date}</date>
                                 <p>Vote average: {details.vote_average}</p>
+                                <a href={`https://m.imdb.com/title/${details.imdb_id}`}><button className="btn bg-success">IMDb</button></a>
                             </div>
                         </div>
-                       <a href={`https://m.imdb.com/title/${details.imdb_id}`}><button className="btn bg-success">IMDb</button></a>
+                       
                     </div>
     )
 }

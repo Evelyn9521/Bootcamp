@@ -8,7 +8,7 @@ function App() {
 
   return (
     <div className="App">
-      <h2>PREMIERS 2021</h2>
+      <h2 className="mb-5">PREMIERS 2021</h2>
       <BrowserRouter>
         <Switch>
             <Route exact path="/" component={Movies}/>

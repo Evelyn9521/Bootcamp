@@ -21,32 +21,25 @@ export default function Movies() {
       history.push(`/details/${movie_id}`)
   }
 
-//   function input(){
-//     movies = movies.filter(movie=>{
-
-//         return movie.title.toUpperCase().includes(movie.target.value.toUpperCase());
-       
-//        });
-//   }
-
     return (
-        <div>
-            <input type="text" placeholder="insert movie"></input>
+        
+        <div className="container ">
+            <input className="mb-5" type="text" placeholder="insert movie"></input>
             {
                 movies.map((movie)=>{
                     
                     return(
                         
-                        <div className="card w-50 h-30 m-auto"class="card1" >
-                            <img className="card-img-top h-30" src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt="Card image cap"/>
-                            <div className="card-body" >
-                                <div >
+                        <div className="card w-50 h-30 m-auto" className="card1 container"  >
+                             <img className="card-img-top img" src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt="Card image cap"/> 
+                            <div className="card-body"  >
+                                <div className="text">
                                 <h5 className="card-title">{movie.title}</h5>
                                 <p className="card-text">{movie.overview}</p>
                                 <span>{movie.release_date}</span>
                                 </div>
                                 <div class="button"> 
-                                    <button className="btn btn-warning" onClick={()=>handleClick(movie.id)}>More info {movie.id}</button>
+                                    <button className="btn btn-success" onClick={()=>handleClick(movie.id)}>More info {movie.id}</button>
                                 </div>
                             </div>
                             
