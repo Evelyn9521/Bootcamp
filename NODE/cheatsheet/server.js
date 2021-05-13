@@ -1,32 +1,38 @@
+require("./config/config")
 
-//Antes de los endpoints, usamos los middlewares
+
+const mongoose = require("mongoose");
+const express = require("express");
+const app = express();
+const users = require("./routes/users")
+
 app.use(express.json());
 
+app.use("/users", users);
 
-app.get("/",(req, res) => {
-    res.json({message: `petición GET recibida correctamente`})
+mongoose.connect("mongodb://localhost:27017/users",{
+    useNewUrlParser:true,
+    useUnifiedTopology:true,
+    useCreateIndex:true
 });
+const db =mongoose.connection;
+
+db.on("error", err=> console.log("connection to db failed:", err));
+db.once("open", ()=> console.log("conected to db successfully"));
 
 
-app.get("/:id",(req, res) => {
-    let id= req.params.id;
-    res.json({message: `petición GET recibida con parámetro: ${id}`})
-});
-    
-app.post("/", (req, res)=>{
-    let body = req.body;
-
-    if(body.username){
-       
-        res.status(200).json({message: `recibido username: ${body.username}`})
-    }else{
-        
-        res.status(400).json({ok: false, message: `el username es obligatorio`})
-    }
 
 
-});
-
-app.listen(3000);
+app.listen(process.env.PORT, ()=> console.log("LISTENING EN PORT", process.env.PORT));
 
 
+
+
+
+//PASOS PARA CREAR UN PROYECTO CON NODE
+//npm init  0 npm init -y para dejar todo por defecto
+//npm install express
+//npm install --save-dev nodemon
+//npm start
+
+//pkill -f nodemon
