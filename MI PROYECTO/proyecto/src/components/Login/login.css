@@ -1,0 +1,10 @@
+
+.columns{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.center{
+    display: flex;
+    align-items: center;
+}
