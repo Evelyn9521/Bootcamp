@@ -5,10 +5,12 @@ const mongoose = require("mongoose");
 const express = require("express");
 const app = express();
 const users = require("./routes/users")
+const login = require("./routes/login")
 
 app.use(express.json());
 
 app.use("/users", users);
+app.use("/login", login);
 
 mongoose.connect("mongodb://localhost:27017/users",{
     useNewUrlParser:true,

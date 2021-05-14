@@ -1,4 +1,8 @@
 
+html, body, #root, .App {
+    height: 100vh;
+}
+
 .columns{
     display: grid;
     grid-template-columns: 1fr 1fr;
