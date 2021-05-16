@@ -3,15 +3,24 @@ import React from 'react'
 
 export default function Input() {
     return (
-        <div >
-            <label for="exampleInputEmail1">Usuario</label>
-            <input type="email" className="form-control" id="exampleInputEmail1" placeholder="Correo electrónico"></input>
-            <label for="exampleInputEmail1">Contraseña</label>
-            <input type="password" className="form-control" id="exampleInputEmail1" placeholder="Contraseña"></input>
+        <div>
+            
             <div>
-                <a href="">¿Olvidaste tu contraseña?</a>
+                <label for="exampleInputEmail1">Usuario</label>
             </div>
-            <button className="btn bg-warning">Crear cuenta nueva</button>
+            <input type="email" className="input" id="exampleInputEmail1" placeholder="Correo electrónico"></input>
+            
+            <div>
+             <label for="exampleInputEmail1">Contraseña</label>
+            </div>
+            <input type="password" className="input" id="exampleInputEmail1" placeholder="Contraseña"></input>
+            <div>
+            <button className="button1">Iniciar Sesión</button>
+            </div>
+            <div className="link">
+                <a className="link" href="">¿Olvidaste tu contraseña?</a>
+            </div>
+            <button className="button2">Crear cuenta nueva</button>
         </div>
     )
 }

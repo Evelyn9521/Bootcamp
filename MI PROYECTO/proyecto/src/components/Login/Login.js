@@ -3,15 +3,21 @@ import Input from "./Input"
 import Title from './Title'
 import "./login.css";
 
+
 export default function Login() {
 
     return (
       
-        <div className="columns">
+        <div className="twocolumns">
           
-          <Title />
+          <div className="center ">
+          <Title/>
+          </div>
+          <div className="center">
           <Input/>
+          </div>
         </div>
+        
         
       
     )
