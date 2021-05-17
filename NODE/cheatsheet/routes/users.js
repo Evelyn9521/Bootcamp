@@ -3,12 +3,11 @@ const ramda = require("ramda");
 const router = express.Router();
 const User = require("../models/user");
 const bcrypt = require("bcrypt")
+const verifyToken = require("../middlewares/auth")
 
-
-
-router.get("/",(req, res) => {
+router.get("/",verifyToken, async(req, res) => {
     //similar al find de mongo si el filtro está vacio me devuelve todos los documentos
-  
+
     const PAGE_SIZE = 2;
     const page = req.query.page || 1;
    
@@ -17,8 +16,6 @@ router.get("/",(req, res) => {
     .skip((page - 1) *PAGE_SIZE) //Nº DE DOC QUE SALTARÁ
     .limit(PAGE_SIZE) //Nº DOC QUE DEVOLVERÁ
     .exec((error, users)=>{
-    
-
     if(error){
         res.status(400).json({ok:false, error})
     }else{
