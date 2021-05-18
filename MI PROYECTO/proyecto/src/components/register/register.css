@@ -1,0 +1,9 @@
+
+.App {
+    height: 100vh;
+    box-sizing: border-box;
+}
+.nav{
+    background-color: grey;
+    height: 100px;
+}

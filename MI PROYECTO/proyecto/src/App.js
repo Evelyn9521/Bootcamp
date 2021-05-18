@@ -1,14 +1,12 @@
 import './App.css';
-import Login from "./components/Login/Login";
+import Router from "./components/router/Router";
 
 
 
 function App() {
   return (
     <div className="App">
-  
-    <Login/>
-    
+      <Router/>
     </div>
   );
 }

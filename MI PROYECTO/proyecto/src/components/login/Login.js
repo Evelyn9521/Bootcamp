@@ -4,18 +4,21 @@ import Title from './Title'
 import "./login.css";
 
 
+
 export default function Login() {
 
     return (
       
-        <div className="twocolumns">
-          
+        <div className="twocolumns login">
+      
           <div className="center ">
-          <Title/>
+            <Title/>
           </div>
+
           <div className="center">
-          <Input/>
+            <Input/>
           </div>
+        
         </div>
         
         
