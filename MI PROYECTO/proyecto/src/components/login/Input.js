@@ -1,8 +1,16 @@
 import React from 'react'
 import m5 from "../../image/m5.png";
-
+import {useHistory} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 
 export default function Input() {
+
+    const history = useHistory();
+
+    function handleClick(){
+        history.push(`/register`)
+    }
+
     return (
         <div className="columnrigth">
             <div>
@@ -18,16 +26,16 @@ export default function Input() {
                 <label for="exampleInputEmail1">Contraseña</label>
           
             </div>
-            <input type="password" className="input" id="exampleInputEmail1" placeholder="Contraseña"></input>
+            <input type="password" className="input" id="exampleInputEmail1" placeholder="*****************"></input>
             
             <div>
                 <button className="button1">Iniciar Sesión</button>
             </div>
             
             <div className="link">
-                <a className="link" href="">¿Olvidaste tu contraseña?</a>
+            <NavLink className="link" exact to="/forgetpassword">¿Has olvidado la contraseña?</NavLink>
             </div>
-            <button className="button2">Crear cuenta nueva</button>
+            <button onClick={()=>handleClick()} className="button2">Crear cuenta nueva</button>
         </div>
     )
 }
