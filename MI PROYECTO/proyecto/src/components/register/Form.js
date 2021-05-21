@@ -5,9 +5,9 @@ export default function Form() {
         <div className="flex-grow">
 
                
-
-            <div className="border">
-            <h1>CREAR UNA CUENTA</h1>
+            <div className="bordercolor border">
+                
+                <h1>CREAR UNA CUENTA</h1>
                 <h3>Es rápido y fácil</h3>
                 <div className="marginInput">
                     <label for="exampleInputName"></label>
@@ -35,7 +35,9 @@ export default function Form() {
                 </div>
                 
                 <button className="button3">Registrarte</button>
-                
+                    
+            
+
             </div>
         
         </div>

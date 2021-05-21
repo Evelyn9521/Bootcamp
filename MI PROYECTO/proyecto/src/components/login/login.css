@@ -1,93 +1,84 @@
-.App {
-    height: 100vh;
-    box-sizing: border-box;
-}
-
-.login {
-    border-radius: 10px;
-}
 
 /* divide el login en dos columnas */
-.twocolumns{
+/* .twocolumns{
     display: grid;
     grid-template-columns: 1fr  1fr;
     height:100%;
-}
+} */
 
 /* mueve el contenido del login al centro de la página */
-.center{
+/* .center{
     display: flex;
     align-items: center;
     justify-content: center;
     height:100%;
-}
+} */
 
-/* estilo de la letra del párrafo */
-.paragraph{
-    font-family:'Times New Roman', Times, serif;
-    font-size:xx-large;
-    display: flex;
-}
 
 /* hace referencia al input de ususario y contraseña */
 .input{
     margin-bottom: 15px;
-    /* width: 300px;
-    height: 40px; */
-    border-radius: 8px;
-    border:none;
-    width: 100%;
-    height: 30px;
-    border: 1px solid #9e9d9d;
+    border-radius: 10px;
+    width: 30%; 
+    height: 40px;
+    border: 1px solid #625e60;
+    padding: 10px;
 }
 
 /* hace referencia al enlace de olvidar contraseña */
 .link{
     text-decoration: none;
     margin-top: 20px;
+    color: #625e60;
+    font-size: 18px;
 }
 
 /* botón de inicio de sesión */
 .button1{
-    width: 100%;
-    height: 30px;
-    background-color: #9e9d9d;
+    width: 30%;
+    height: 40px;
+    background-color: #625e60;
     border: none;
     border-radius: 8px;
     color: white;
     cursor: pointer;
-    margin-top: 25px
+    margin-top: 25px;
+    font-size: 20px;
 }
 
 /* botón de crear nueva cuenta */
 .button2{
     margin-top: 50px;
-    width: 100%;
-    height: 50px;
+    width: 30%;
+    height: 60px;
     border-radius: 10px;
-    background-color:rgb(238, 136, 153);
+    background-color:rgb(224, 150, 162);
     border:none;
     cursor: pointer;
     color: white;
+    font-size: 23px;
 }
  
 /* foto de la columna izquierda */
-.photo{
-    background-image: url("../../image/imgfondo.png");
-    background-size: cover;
+/* .photo{
+    background-image:url(../../image/peter-boccia-Na92RURfNW8-unsplash.jpg);
+    background-size: cover; */
     /* background-position: center center; */
-    height: 100%;
+    /* height: 100%;
     width:100%;
-    border-right: 4px solid rgb(241, 146, 162) ;
-}
+    border-right: 4px solid #625e60 ;
+} */
 /* tamaño del logo */
-.logo{
-    width: 390px;
-   
-}
+/* .logo{
+    width: 400px;
+} */
 
-.columnrigth{
-    height: 100vh;
+
+
+
+.photo2{
+    background-image: url(../../image/sarah-cervantes-BOBMNKVry0Q-unsplash.jpg);
+    background-size: cover;
 }
 
 

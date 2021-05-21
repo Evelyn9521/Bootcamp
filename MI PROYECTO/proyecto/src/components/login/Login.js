@@ -9,15 +9,15 @@ export default function Login() {
 
     return (
       
-        <div className="twocolumns login">
+        <div className="photo2">
       
-          <div className="center ">
+          {/* <div className="center ">
             <Title/>
-          </div>
+          </div> */}
 
-          <div className="center">
+         
             <Input/>
-          </div>
+          
         
         </div>
         

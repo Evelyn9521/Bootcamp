@@ -1,30 +1,8 @@
-body{
-    background-color:white;
-}
 
-/* engloba toda la navbar */
-.nav{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   height: 85px;
-   background-color:#9e9d9d;
-}
-/* .buttonNav{
-    width: 20px;
-    height: 30px;
-    background-color: #9e9d9d;
-    border: none;
-    border-radius: 8px;
-    color: white;
-    cursor: pointer;
-  
-} */
 /* ocupa toda la página restante desde la navbar  */
 .d-flex{
     display: flex;
     flex-direction: column;
-  
     height: 100%;
 }
 
@@ -32,23 +10,73 @@ body{
 .flex-grow{
     flex-grow: 1;
   
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-/* separa los input que hay en la navbar */
-.separatedInput{
-    margin-right: 20px;
+
+/* estilo de navbar */
+.topnav {
+  background-color: #625E60;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+
 }
+
+/* logo navbar */
+.topnav a {
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+/* links  mouse-over */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* estilos input navbar */
+.topnav .input2 {
+  padding: 10px;
+  margin-top: 12px;
+  border: none;
+  width: 300px; 
+  margin-right: 25px;
+}
+
+/* estilos del botón Entrar con mouse:over*/
+.topnav .login-container button {
+  padding: 6px;
+  margin-top: 16px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.topnav .login-container button:hover {
+  background: #ccc;
+}
+
 
 /* borde del formulario */
 .border{
-    border:2px solid rgb(160, 39, 39);
-    width: 600px;
+  
+    width: 700px;
     height: 600px;
+    border-radius: 20px;
+   
 }
 /* tamaño y estilos de los input del formulario */
 input{
@@ -56,6 +84,7 @@ input{
     height: 50px;
     border-radius: 10px;
     border-color:#9e9d9d;
+   
 }
 /* separación entre los inputs del formulario */
 .marginInput{
@@ -63,8 +92,16 @@ input{
 }
 
 .button3{
-    margin-top: 30px;
-    margin-bottom: 30px;
+  
+    width: 70%;
+    height: 55px;
+    background-color: rgb(238, 136, 153);
+    border-radius: 12px;
+    color: rgb(34, 32, 32);
+    cursor: pointer;
+    margin-top: 20px
 }
-
+.bordercolor{
+  background-color: white;
+}
 

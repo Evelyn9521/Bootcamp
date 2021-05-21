@@ -12,7 +12,8 @@ export default function Input() {
     }
 
     return (
-        <div className="columnrigth">
+        <div className=" ">
+            <div className="">
             <div>
                 <img className="logo" src={m5}></img>
             </div>
@@ -36,6 +37,7 @@ export default function Input() {
             <NavLink className="link" exact to="/forgetpassword">¿Has olvidado la contraseña?</NavLink>
             </div>
             <button onClick={()=>handleClick()} className="button2">Crear cuenta nueva</button>
+            </div>
         </div>
     )
 }

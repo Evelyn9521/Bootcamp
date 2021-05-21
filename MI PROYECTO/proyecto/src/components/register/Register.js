@@ -1,6 +1,7 @@
 import React from 'react'
-import Navbar from './Navbar'
 import Form from "./Form"
+import Navbar from "./Navbar";
+import Footer from "../footer/Footer";
 import "./register.css"
 
 export default function Register() {
@@ -8,6 +9,7 @@ export default function Register() {
         <div className="d-flex">
             <Navbar/>
             <Form/>
+            <Footer /> 
         </div>
     )
 }

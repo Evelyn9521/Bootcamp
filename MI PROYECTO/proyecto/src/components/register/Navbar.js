@@ -7,21 +7,18 @@ export default function Navbar() {
 
 
     return (
-        <div className="nav ">
-            
-            <NavLink className="left" exact to="/">Login</NavLink>
-        
-            
-            <div className="separatedInput">
-                <label for="exampleInputEmail1">Usuario</label>
-                <input type="email" className="" id="exampleInputEmail1" placeholder="Correo electrónico"></input>
+           
+            <div className="topnav">
+               <NavLink className="" exact to="/">MUJERES QUE LUCHAN</NavLink> 
+               
+                <div className="login-container">
+                        
+                        <input className="input2 " type="text" placeholder="Correo electrónico" />
+                        <input className="input2" type="text" placeholder="Contraseña" />
+                    
+                    <button>Entrar</button>
+                </div>
             </div>
-            <div className="separatedInput">
-                <label for="exampleInputEmail1">Contraseña</label>
-                <input type="password" className="" id="exampleInputEmail1" placeholder="Contraseña"></input>
-            </div>
-                <button className="buttonNav">Entrar</button>
-            
-        </div>
+          
     )
 }
