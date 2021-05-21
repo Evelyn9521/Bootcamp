@@ -1,27 +1,14 @@
 
-/* divide el login en dos columnas */
-/* .twocolumns{
-    display: grid;
-    grid-template-columns: 1fr  1fr;
-    height:100%;
-} */
-
-/* mueve el contenido del login al centro de la página */
-/* .center{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height:100%;
-} */
-
-
+.vh{
+ height: 100vh;
+}
 /* hace referencia al input de ususario y contraseña */
 .input{
     margin-bottom: 15px;
-    border-radius: 10px;
-    width: 30%; 
-    height: 40px;
-    border: 1px solid #625e60;
+    border-radius: 12px;
+    width: 25%; 
+    height: 50px;
+    border: none;
     padding: 10px;
 }
 
@@ -29,14 +16,14 @@
 .link{
     text-decoration: none;
     margin-top: 20px;
-    color: #625e60;
+    color: white;
     font-size: 18px;
 }
 
 /* botón de inicio de sesión */
 .button1{
-    width: 30%;
-    height: 40px;
+    width: 25%;
+    height: 50px;
     background-color: #625e60;
     border: none;
     border-radius: 8px;
@@ -45,12 +32,16 @@
     margin-top: 25px;
     font-size: 20px;
 }
+.button1:hover{
+    background-color: rgb(224, 150, 162);
+    color: black;
+}
 
 /* botón de crear nueva cuenta */
 .button2{
     margin-top: 50px;
-    width: 30%;
-    height: 60px;
+    width: 25%;
+    height: 70px;
     border-radius: 10px;
     background-color:rgb(224, 150, 162);
     border:none;
@@ -58,28 +49,21 @@
     color: white;
     font-size: 23px;
 }
+.button2:hover{
+    background-color: #625e60;
+    color:white;
+}
  
-/* foto de la columna izquierda */
-/* .photo{
-    background-image:url(../../image/peter-boccia-Na92RURfNW8-unsplash.jpg);
-    background-size: cover; */
-    /* background-position: center center; */
-    /* height: 100%;
-    width:100%;
-    border-right: 4px solid #625e60 ;
-} */
-/* tamaño del logo */
-/* .logo{
-    width: 400px;
-} */
-
-
-
 
 .photo2{
     background-image: url(../../image/sarah-cervantes-BOBMNKVry0Q-unsplash.jpg);
     background-size: cover;
+    
 }
 
-
+/* titulo de ususario y contraseña */
+.labell{
+    font-size: 20px;
+    color: white;
+}
 

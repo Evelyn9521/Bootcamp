@@ -16,14 +16,12 @@
     align-items: center;
 }
 
-
 /* estilo de navbar */
 .topnav {
   background-color: #625E60;
   height: 80px;
   display: flex;
   justify-content: space-between;
-
 }
 
 /* logo navbar */
@@ -32,7 +30,7 @@
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 18px;
   display: flex;
   align-items: center;
   color: white;
@@ -53,12 +51,12 @@
   margin-right: 25px;
 }
 
-/* estilos del botón Entrar con mouse:over*/
+/* estilos del botón Entrar con mouse:hover*/
 .topnav .login-container button {
   padding: 6px;
   margin-top: 16px;
   margin-right: 16px;
-  background: #ddd;
+  background:white;
   font-size: 17px;
   border: none;
   border-radius: 8px;
@@ -69,39 +67,43 @@
   background: #ccc;
 }
 
-
 /* borde del formulario */
-.border{
-  
-    width: 700px;
-    height: 600px;
-    border-radius: 20px;
-   
+.border1{
+  width: 600px;
 }
+
 /* tamaño y estilos de los input del formulario */
 input{
-    width: 80%;
+    width: 90%;
     height: 50px;
     border-radius: 10px;
-    border-color:#9e9d9d;
+   border: none;
    
 }
+
 /* separación entre los inputs del formulario */
 .marginInput{
     margin-top: 30px;
+    
 }
 
+/* botón de crear cuenta */
 .button3{
-  
     width: 70%;
     height: 55px;
     background-color: rgb(238, 136, 153);
     border-radius: 12px;
-    color: rgb(34, 32, 32);
+    border: none;
+    color: white;
+    font-size: 20px;
     cursor: pointer;
     margin-top: 20px
 }
-.bordercolor{
-  background-color: white;
+.button3:hover{
+  background-color: #625E60;
+}
+/* titulo de crear cuenta */
+.title{
+  color: white;
 }
 
