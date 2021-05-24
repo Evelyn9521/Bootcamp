@@ -1,3 +1,20 @@
+.d-flex{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* hace que la navbar esté fija con esas medidas  */
+.flex-grow{
+    flex-grow: 1;
+  
+    /* display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center; */  
+}
+
+
 .linksNav{
     width: 100%;
     height:75px ;
@@ -5,13 +22,104 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+    
+}
+.linkk{
     color: white;
     font-size: 28px;
+    text-decoration: none;
 }
+.linkk:hover{
+color: black;
+}
+
 .photoPortada{
     background-image: url(../../image/caroline-feelgood-vHPf5_vbI5g-unsplash.jpg);
     background-size: cover;
     background-position: center center;
     width: 100%;
     height: 285px;
+} 
+
+/* imagen de fondo en inicio */
+.imgBackground{
+    background-image: url(../../image/bench-accounting-xxeAftHHq6E-unsplash.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+/* divide la pág en dos columnas */
+.InicioTwoColumns{
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    display: flex;
+    justify-content: center;
+    
+}
+
+/* columna derecha de la pág inicio */
+.columnrigth{
+   width: 75%;
+   margin-left: 20px;
+   margin-right: 20px;
+ 
+}
+/* columna izquierda de la pág inicio */
+.columnleftt {
+    margin-top: 50px;
+    font-size: 20px;
+    font-family: verdana;
+    margin-right: 40px;
+}
+.columnleftt li{
+    margin-bottom: 12px;
+  
+    text-align: justify;
+}
+.columnleftt li a{
+    text-decoration: none;
+    color: black;
+
+}
+.columnleftt li a:hover{
+    color:white;
+    background-color: violet;
+    border-radius: 12px;
+}
+
+/* estilos del título de la pág inicio */
+.title1 {
+    margin-top: 60px;
+    margin-bottom: 100px;
+    margin-left: 80px;
+    margin-right: 80px;
+    text-align: center;
+    border-radius: 15px;
+    
+  
+
+}
+.title1 h2{
+    margin-bottom: 20px;
+   text-decoration: 3px underline;
+   
+}
+
+/* estilos del contenido de la columna derecha */
+.witdhDiv ul li {
+   margin-bottom: 15px;
+    text-align: start;
+    text-align: justify;
+    font-size: 18px;
+    font-family: verdana;
+
+}
+.styleParagraph p{
+    text-align: start;
+    text-align: justify;
+    font-family: verdana;
+    font-size: 18px;
+}
+.marginBottom{
+    margin-bottom:40px;
 }
