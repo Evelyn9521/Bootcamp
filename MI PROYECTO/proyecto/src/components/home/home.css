@@ -1,28 +1,25 @@
-.d-flex{
-    display: flex;
-    flex-direction: column;
-    height: 100%;
+body{
+    background-color: #f0f0f0;
 }
-
-/* hace que la navbar esté fija con esas medidas  */
-.flex-grow{
+.home {
+    min-height: 100vh;
+    
+     display: flex;
+    flex-direction: column;
+    }
+    
+.content {
     flex-grow: 1;
-  
-    /* display: flex;
-    flex-direction: column;
-    justify-content: left;
-    align-items: center; */  
-}
-
+    }
 
 .linksNav{
     width: 100%;
-    height:75px ;
-    background-color: #626562;
+    height:50px ;
+    background-color: rgb(224, 150, 162);
     display: flex;
     align-items: center;
     justify-content: space-around;
-    
+   
 }
 .linkk{
     color: white;
@@ -30,23 +27,33 @@
     text-decoration: none;
 }
 .linkk:hover{
-color: black;
+color:rgb(0, 59, 0);
 }
 
+
 .photoPortada{
-    background-image: url(../../image/caroline-feelgood-vHPf5_vbI5g-unsplash.jpg);
+    background-image: url(../../image/cancerdemama.jpg);
     background-size: cover;
     background-position: center center;
     width: 100%;
     height: 285px;
+    
 } 
+/* da estilos a todos los titulos del texto */
+.colors{
+    color: rgb(224, 150, 162);
+    font-weight: bolder;
+    font-style:italic;
+}
 
+
+/*............................ APARTADO INICIO EN HOME................. */
 /* imagen de fondo en inicio */
-.imgBackground{
+/* .imgBackground{
     background-image: url(../../image/bench-accounting-xxeAftHHq6E-unsplash.jpg);
     background-size: cover;
     background-position: center center;
-}
+} */
 
 /* divide la pág en dos columnas */
 .InicioTwoColumns{
@@ -55,6 +62,7 @@ color: black;
     display: flex;
     justify-content: center;
     
+    
 }
 
 /* columna derecha de la pág inicio */
@@ -62,18 +70,26 @@ color: black;
    width: 75%;
    margin-left: 20px;
    margin-right: 20px;
+   background-color: white;
+   padding: 15px;
+   margin-top: 20px;
+  border-radius: 50px;
  
 }
 /* columna izquierda de la pág inicio */
 .columnleftt {
-    margin-top: 50px;
+    margin-left: 20px;
+    margin-top: 25px;
     font-size: 20px;
     font-family: verdana;
     margin-right: 40px;
+    background-color: white;
+    padding:35px;
+    border-radius: 50px;
+   
 }
 .columnleftt li{
-    margin-bottom: 12px;
-  
+    margin-bottom: 15px;
     text-align: justify;
 }
 .columnleftt li a{
@@ -82,26 +98,29 @@ color: black;
 
 }
 .columnleftt li a:hover{
-    color:white;
-    background-color: violet;
-    border-radius: 12px;
+    color:rgb(224, 150, 162);
+ 
+   
 }
 
-/* estilos del título de la pág inicio */
+/* estilos del título de la pág inicio columna derecha */
 .title1 {
     margin-top: 60px;
     margin-bottom: 100px;
     margin-left: 80px;
     margin-right: 80px;
     text-align: center;
-    border-radius: 15px;
-    
+    font-family: Verdana;
+
   
+   
 
 }
 .title1 h2{
     margin-bottom: 20px;
    text-decoration: 3px underline;
+    color: rgb(224, 150, 162);
+    font-weight: bolder;
    
 }
 
@@ -112,6 +131,7 @@ color: black;
     text-align: justify;
     font-size: 18px;
     font-family: verdana;
+    
 
 }
 .styleParagraph p{
@@ -123,3 +143,54 @@ color: black;
 .marginBottom{
     margin-bottom:40px;
 }
+
+
+
+/* .......................APARTADO DE CUIDE SU SALUD EN HOME.................. */
+
+/* estilos de las cards */
+.card-container {
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr ;
+    gap: 30px;
+    padding: 40px;
+   
+   
+    
+}
+.card-container .card{
+    font-size: 15px;
+    text-align: start;
+    text-align: justify;
+    font-family: verdana;
+    font-size: 15px;
+  
+}
+.card-container .card .card-body h4{
+    text-align: center;
+    color: rgb(224, 150, 162);
+    font-weight:bolder;
+}
+
+
+
+/* contenedor del titulo y párrafo */
+.divPadre{
+   margin-top: 50px;
+   font-family: verdana;
+   margin-left: 65px;
+   margin-right: 65px;
+   background-color: white;
+   border-radius: 20px;
+   padding: 30px;
+   color:black;
+    
+}
+.divPadre h2{
+    color:rgb(224, 150, 162) ;
+    font-weight: bolder;
+}
+
+

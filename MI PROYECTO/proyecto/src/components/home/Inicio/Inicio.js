@@ -7,7 +7,7 @@ import Footer from "../../footer/Footer"
 
 export default function Inicio() {
     return (
-        <div className="d-flex">
+        <div className="home">
             <Photo/> 
             <Nav/>
             <InicioContent/>

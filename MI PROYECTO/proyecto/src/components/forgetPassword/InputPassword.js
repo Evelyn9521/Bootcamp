@@ -6,7 +6,7 @@ export default function InputPassword() {
             <div className="">
                
                 <h2 className="colorletters">Recupera tu cuenta</h2>
-                <h4 className="colorletters">Introduce tu correo electrónico y te enviaremos un enlace para que vuelvas a entrar en tu cuenta.</h4>
+                <h4 className="colorletters1">Introduce tu correo electrónico y te enviaremos un enlace para que vuelvas a entrar en tu cuenta.</h4>
                
                     <div>
                     <label for="exampleInputEmail1"></label>
