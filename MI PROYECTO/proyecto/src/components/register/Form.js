@@ -27,6 +27,14 @@ export default function Form() {
                 <label for="examplePassword"></label>
                     <input type="password" id="examplePassword" placeholder="Contraseña"></input>
                 </div>
+                <div className="marginInput">
+                    <label for="exampleInputCity"></label>
+                    <input type="text" id="exampleInputCity" placeholder="Lugar de Nacimiento"></input>
+                </div>
+                <div className="marginInput">
+                    <label for="exampleInput"></label>
+                    <input type="text" id="exampleInput" placeholder="Provincia"></input>
+                </div>
 
                 <div className="marginInput">
                     <label className="title" for="birthdayInput">Fecha de nacimiento</label>
